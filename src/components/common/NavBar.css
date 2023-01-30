@@ -10,11 +10,14 @@
 }
 
 .logo {
+    padding-left: 5%;
+    font-size: larger;
     font-weight: 800;
     cursor: pointer;
 }
 
 .nav_bar_buttons{
+    padding-right: 5%;
     display: flex;
 }
 

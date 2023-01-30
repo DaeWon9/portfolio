@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Mousewheel, Pagination } from 'swiper';
 import Introduction from "../components/slides/Introduction";
@@ -11,10 +11,17 @@ import 'swiper/css/effect-fade';
 import "./Home.css"
 
 const Home = () => {
+    const [swiper, setSwiper] = useState()
+
     return(
         <>
-        <NavBar />
+        <NavBar 
+            swiper = {swiper}
+        />
         <Swiper
+            onSwiper={(swiper) => {
+                setSwiper(swiper)
+            }}
             direction={"vertical"}
             slidesPerView={1}
             // spaceBetween={30}
@@ -26,9 +33,18 @@ const Home = () => {
             modules={[Mousewheel, Pagination]}
             className="slider"
         >
-            <SwiperSlide><Introduction /></SwiperSlide>
-            <SwiperSlide><Career /></SwiperSlide>
-            <SwiperSlide><Project /></SwiperSlide>
+            <SwiperSlide>
+                <Introduction />
+            </SwiperSlide>
+            
+            <SwiperSlide>
+                <Career />
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <Project 
+                />
+            </SwiperSlide>
         </Swiper>
         </>
     )
