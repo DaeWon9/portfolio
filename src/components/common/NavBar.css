@@ -1,0 +1,24 @@
+.nav_bar_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: aliceblue;
+    z-index: 999;
+}
+
+.logo {
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.nav_bar_buttons{
+    display: flex;
+}
+
+.nav_bar_button{
+    padding: 20px;
+    cursor: pointer;
+}
