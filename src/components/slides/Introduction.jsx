@@ -5,7 +5,12 @@ const Introduction = () => {
 
     return(
         <div className="slide_container" style={{backgroundColor:"wheat"}}>
-            Hello My Name Is DaeWonPark
+            <div className="slide_header">
+                About Me
+            </div>
+            <div className="slide_body">
+                Hello My Name Is DaeWonPark
+            </div>
         </div>
     )
 }

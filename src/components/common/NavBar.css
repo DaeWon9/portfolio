@@ -23,5 +23,11 @@
 
 .nav_bar_button{
     padding: 20px;
+    font-weight: 600;
     cursor: pointer;
+}
+
+.nav_bar_button:hover{
+    font-weight: 600;
+    color:navy;
 }
