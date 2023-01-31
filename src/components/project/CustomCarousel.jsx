@@ -15,6 +15,7 @@ const CustomCarousel = (props) => {
 
     function onClickCard(index){
         if (currentSlide.current === index){
+            props.setProjectIndex(index)
             props.setIsDetailCardOpen(true)
         }
         else{

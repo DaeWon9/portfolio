@@ -6,6 +6,7 @@
     border-radius: 10px;
     z-index: 999;
     margin-left: 15%;
+    margin-top: 8%;
 }
 
 .detail_card_top_bar{
@@ -34,7 +35,6 @@
 }
 
 .detail_card_body_left{
-    background-color: aquamarine;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,7 +43,6 @@
 }
 
 .detail_card_body_right{
-    background-color: bisque;
     color: black;
     width: 60%;
     height: 100%;
@@ -54,10 +53,10 @@
     font-size: x-large;
 }
 
-.detail_card_introduction{
-
+.detail_card_background{
+    padding-top: 2%;
 }
 
 .detail_card_extra{
-
+    padding-top: 2%;
 }

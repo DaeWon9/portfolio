@@ -1,7 +1,17 @@
 import React from "react";
+import { useState } from "react";
+import { useEffect } from "react";
+import { getProjectData } from "../../datas/ProjectData";
 import "./ProjectDetailCard.css"
 
 const ProjectDetailCard = (props) =>{
+
+    let [projectData, setProjectData] = useState()
+
+    useEffect( () => {
+        setProjectData(getProjectData(props.projectIndex))
+    },[props.projectIndex])
+    
     return(
         <div className="detail_card_container">
             <div className="detail_card_top_bar">
@@ -11,23 +21,25 @@ const ProjectDetailCard = (props) =>{
             </div>
             <div className="detail_card_body">
                 <div className="detail_card_body_left">
-                    PICUTRE
+                    <img src={projectData && projectData.image} width="100%" height="auto"></img>
                 </div>
 
                 <div className="detail_card_body_right">
                     <div className="detail_card_title">
-                        프로젝트명
-                    </div>
+                        {projectData && projectData.heading}
+                    </div> 
 
-                    <div className="detail_card_introduction">
-                        무슨무슨무슨 프로젝트입니다.
+                    <div className="detail_card_background">
+                        {projectData && projectData.background}
                     </div>        
 
                     <div className="detail_card_extra">
-                        <p>주요기능 : </p>
-                        <p>github : </p>
-                        <p>skills : </p>
-                    </div>             
+                        {projectData && projectData.takeAway}
+                    </div>    
+
+                    <div className="detail_card_extra">
+                        {projectData && projectData.service}
+                    </div>         
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import CustomCarousel from "./CustomCarousel";
-import { getProjectData } from "../../datas/ProjectData";
+import { getAllProjectData } from "../../datas/ProjectData";
 
 const ProjectList = (props) =>{
         
@@ -9,7 +9,7 @@ const ProjectList = (props) =>{
     let [projectData, setProjectData] = useState([]);
 
     useEffect( () => {
-        setProjectData(getProjectData())
+        setProjectData(getAllProjectData())
     }, []) 
 
     useEffect( () => {
@@ -19,7 +19,7 @@ const ProjectList = (props) =>{
                 key: index,
                 content: 
                 <ProjectCard 
-                    image={project.image}
+                    image={project.thumbnailImage}
                     date={project.date}
                     heading={project.heading}
                     body={project.body}
@@ -40,6 +40,7 @@ const ProjectList = (props) =>{
             showArrows={false}
             isDetailCardOpen = {props.isDetailCardOpen}
             setIsDetailCardOpen = {props.setIsDetailCardOpen}
+            setProjectIndex = {props.setProjectIndex}
         />
     );
 }
