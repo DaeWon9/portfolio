@@ -3,7 +3,8 @@ import "./NavBar.css";
 
 const INTRODUCTION = 0;
 const CAREER = 1;
-const PROJECT = 2;
+const SKILLS = 2;
+const PROJECT = 3;
 
 const NavBar = (props) => {
     return(
@@ -17,6 +18,9 @@ const NavBar = (props) => {
                 </div>
                 <div className="nav_bar_button" onClick={() => props.swiper.slideTo(CAREER)}>
                     Career
+                </div>
+                <div className="nav_bar_button" onClick={() => props.swiper.slideTo(SKILLS)}>
+                    Skills
                 </div>
                 <div className="nav_bar_button" onClick={() => props.swiper.slideTo(PROJECT)}>
                     Projects

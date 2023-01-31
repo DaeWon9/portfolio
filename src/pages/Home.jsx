@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Mousewheel, Pagination } from 'swiper';
 import Introduction from "../components/slides/Introduction";
 import Career from "../components/slides/Career";
+import Skills from "../components/slides/Skills";
 import Project from "../components/slides/Project";
 import NavBar from "../components/common/NavBar";
 import 'swiper/css';
@@ -36,14 +37,17 @@ const Home = () => {
             <SwiperSlide>
                 <Introduction />
             </SwiperSlide>
-            
+
             <SwiperSlide>
                 <Career />
             </SwiperSlide>
+            
+            <SwiperSlide>
+                <Skills />
+            </SwiperSlide>
 
             <SwiperSlide>
-                <Project 
-                />
+                <Project />
             </SwiperSlide>
         </Swiper>
         </>
