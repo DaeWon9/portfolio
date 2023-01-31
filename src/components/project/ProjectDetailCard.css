@@ -1,0 +1,63 @@
+.detail_card_container{
+    position: absolute;
+    background-color: white;
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+    z-index: 999;
+    margin-left: 15%;
+}
+
+.detail_card_top_bar{
+    height: 5%;
+    display: flex;
+    justify-content: right;
+    padding-top: 1%;
+    padding-right: 1%;
+}
+
+.detail_card_body{
+    display: flex;
+    height: 95%;
+    width: 100%;
+}
+
+.closed_button{
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+.closed_button:hover{
+    background-color: gainsboro;
+}
+
+.detail_card_body_left{
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+}
+
+.detail_card_body_right{
+    background-color: bisque;
+    color: black;
+    width: 60%;
+    height: 100%;
+}
+
+.detail_card_title{
+    text-align: center;
+    font-size: x-large;
+}
+
+.detail_card_introduction{
+
+}
+
+.detail_card_extra{
+
+}

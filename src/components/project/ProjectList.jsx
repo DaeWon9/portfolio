@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 import CustomCarousel from "./CustomCarousel";
 import { getProjectData } from "../../datas/ProjectData";
 
-const ProjectList = () =>{
+const ProjectList = (props) =>{
         
     let [projectCards, setProjectCards] = useState([]);
     let [projectData, setProjectData] = useState([]);
@@ -15,8 +15,6 @@ const ProjectList = () =>{
     useEffect( () => {
         let cards = []
         projectData.map( (project, index) => {
-            console.log(index)
-            console.log(project)
             cards.push({
                 key: index,
                 content: 
@@ -29,17 +27,8 @@ const ProjectList = () =>{
                 />
             })
         })
-        console.log(cards)
         setProjectCards(cards)
     },[projectData])
-
-    useEffect( () => {
-        console.log(projectCards)
-        if (projectCards.length === 2){
-            setProjectCards(prevList => [...prevList, <></>])
-        }
-    }, [projectCards])
-
 
     return (
         <CustomCarousel
@@ -49,6 +38,8 @@ const ProjectList = () =>{
             margin="0 auto"
             offset={2}
             showArrows={false}
+            isDetailCardOpen = {props.isDetailCardOpen}
+            setIsDetailCardOpen = {props.setIsDetailCardOpen}
         />
     );
 }
