@@ -9,7 +9,9 @@ const Introduction = () => {
                 About Me
             </div>
             <div className="slide_body">
-                Hello My Name Is DaeWonPark
+                <div className="introduction">
+                    안녕하세요 ~~~~개발자 박대원입니다.
+                </div>
             </div>
         </div>
     )
