@@ -35,6 +35,8 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    font-size: xx-large;
+    font-weight: 700;
 }
 
 .career_left{
