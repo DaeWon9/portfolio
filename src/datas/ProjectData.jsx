@@ -5,6 +5,8 @@ export const getAllProjectData = () => {
         convenienceStore: require('../assets/thunmnailImage/ConvenienceStore.png'),
         lobster: require('../assets/thunmnailImage/Lobster.png'),
         eyetist: require('../assets/thunmnailImage/Eyetist.png'),
+        sutda : require('../assets/thunmnailImage/Sutda.jpeg'),
+        portfolio: require('../assets/thunmnailImage/Portfolio.png'),
     }
 
     const convenienceStroeImage = {
@@ -24,6 +26,19 @@ export const getAllProjectData = () => {
         login : require('../assets/Image/eyeTist/login.png'),
         painting : require('../assets/Image/eyeTist/painting.png'),
         gallery : require('../assets/Image/eyeTist/gallery.png'),
+    }
+
+    const sutdaImage = {
+        page1 : require('../assets/Image/sutda/sutda.png'),
+        page2 : require('../assets/Image/sutda/sutda2.png'),
+        page3 : require('../assets/Image/sutda/sutda3.png'),
+        page4 : require('../assets/Image/sutda/sutda4.png'),
+        page5 : require('../assets/Image/sutda/sutda5.png'),
+        page6 : require('../assets/Image/sutda/sutda6.png'),
+        page7 : require('../assets/Image/sutda/sutda7.png'),
+        page8 : require('../assets/Image/sutda/sutda8.png'),
+        page9 : require('../assets/Image/sutda/sutda9.png'),
+        page10 : require('../assets/Image/sutda/sutda10.png'),
     }
     
     let projectData = [
@@ -149,6 +164,73 @@ export const getAllProjectData = () => {
                             <p><strong>✤ 다양한 <span style={{color: "#ed3770"}}>그림그리기 도구</span> 제공</strong></p>
                             <p><strong>✤ <span style={{color: "#ed3770"}}>갤러리</span>를 통한 그림공유</strong></p>
                             <p><strong>✤ Github : <a target="_blank" href='https://github.com/Eyetist/Eyetist_Client'>https://github.com/Eyetist/Eyetist_Client</a></strong></p>
+                        </>
+        },
+        {
+            thumbnailImage : thumnailImage.sutda,
+            date : "2022/05",
+            heading : "Kakao Friends Sutda",
+            body : "카카오프렌즈 컨셉으로 제작한 섯다게임 입니다.",
+            link : "https://github.com/DaeWon9/OpenSourceProject",
+
+            image : <>
+                        <SwiperSlide style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                            <img src={sutdaImage.page1} width="80%"></img>
+                        </SwiperSlide>
+                        <SwiperSlide style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                            <img src={sutdaImage.page2} width="80%"></img>
+                        </SwiperSlide>
+                        <SwiperSlide style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                            <img src={sutdaImage.page3} width="80%"></img>
+                        </SwiperSlide>
+                        <SwiperSlide style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                            <img src={sutdaImage.page4} width="80%"></img>
+                        </SwiperSlide>
+                        <SwiperSlide style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                            <img src={sutdaImage.page5} width="80%"></img>
+                        </SwiperSlide>
+                        <SwiperSlide style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                            <img src={sutdaImage.page6} width="80%"></img>
+                        </SwiperSlide>
+                        <SwiperSlide style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                            <img src={sutdaImage.page7} width="80%"></img>
+                        </SwiperSlide>
+                        <SwiperSlide style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                            <img src={sutdaImage.page8} width="80%"></img>
+                        </SwiperSlide>
+                        <SwiperSlide style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                            <img src={sutdaImage.page9} width="80%"></img>
+                        </SwiperSlide>
+                        <SwiperSlide style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                            <img src={sutdaImage.page10} width="80%"></img>
+                        </SwiperSlide>
+                    </>,
+            background : <p>
+                        </p>,
+            takeAway :  <p>
+                        </p>,
+            service:    <>
+                            <p><strong>✤ Github : <a target="_blank" href='https://github.com/DaeWon9/OpenSourceProject'>https://github.com/DaeWon9/OpenSourceProject</a></strong></p>
+                        </>
+        },
+        {
+            thumbnailImage : thumnailImage.portfolio,
+            date : "2023/02",
+            heading : "Portfolio",
+            body : "포트폴리오 용도로 제작한 웹사이트입니다. 지금 보고 있는 바로 이 웹사이트 입니다.",
+            link : "https://github.com/DaeWon9/portfolio",
+
+            image : <>
+                        <SwiperSlide style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                            <img src={thumnailImage.portfolio} width="80%"></img>
+                        </SwiperSlide>
+                    </>,
+            background : <p>
+                        </p>,
+            takeAway :  <p>
+                        </p>,
+            service:    <>
+                            <p><strong>✤ Github : <a target="_blank" href='https://github.com/DaeWon9/portfolio'>https://github.com/DaeWon9/portfolio</a></strong></p>
                         </>
         },
     ]
