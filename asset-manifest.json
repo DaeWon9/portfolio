@@ -1,27 +1,39 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.ff00fee0.css",
-    "main.js": "/portfolio/static/js/main.a5966f17.js",
+    "main.js": "/portfolio/static/js/main.32113c65.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/sutda3.png": "/portfolio/static/media/sutda3.23bdb593e6ec8687fb0a.png",
+    "static/media/sutda10.png": "/portfolio/static/media/sutda10.8ae90dc58ea08cf2c0e8.png",
+    "static/media/sutda9.png": "/portfolio/static/media/sutda9.ff822e1662162318cfee.png",
+    "static/media/sutda.png": "/portfolio/static/media/sutda.55f9bd39aed049d99c9c.png",
+    "static/media/sutda2.png": "/portfolio/static/media/sutda2.fb72caf827d65553b81b.png",
+    "static/media/sutda8.png": "/portfolio/static/media/sutda8.fdc94864d2b467730830.png",
     "static/media/painting.png": "/portfolio/static/media/painting.33eb5e1a67c08d7c0317.png",
     "static/media/gallery.png": "/portfolio/static/media/gallery.bed16516401f8770e3d2.png",
+    "static/media/sutda5.png": "/portfolio/static/media/sutda5.3efd65b721103f7a2e43.png",
+    "static/media/sutda4.png": "/portfolio/static/media/sutda4.ad8a1a9f3e2575fc445b.png",
+    "static/media/sutda6.png": "/portfolio/static/media/sutda6.1b25da05a1a46009930c.png",
+    "static/media/sutda7.png": "/portfolio/static/media/sutda7.bf32a0ba8243016c0f3e.png",
     "static/media/start.png": "/portfolio/static/media/start.7b8b5ce1750b56bfd2fd.png",
     "static/media/login.png": "/portfolio/static/media/login.2ffa5aaee82d3cdf6b71.png",
     "static/media/statistics.png": "/portfolio/static/media/statistics.af81363f1123ba70d930.png",
     "static/media/workspace.png": "/portfolio/static/media/workspace.12a6c0d12bee841aede7.png",
     "static/media/noodle.jpeg": "/portfolio/static/media/noodle.860adeebbd46023acae2.jpeg",
     "static/media/snack.jpeg": "/portfolio/static/media/snack.45a4c6d11f2cc7141fc3.jpeg",
+    "static/media/Sutda.jpeg": "/portfolio/static/media/Sutda.c91a2fc8eaa1ead2877a.jpeg",
     "static/media/drink.jpeg": "/portfolio/static/media/drink.0da7d7835c12dd01c55a.jpeg",
     "static/media/Eyetist.png": "/portfolio/static/media/Eyetist.fcc22e9ba307049f0654.png",
     "static/media/Lobster.png": "/portfolio/static/media/Lobster.472f786d6b9a7e0c4a63.png",
+    "static/media/Portfolio.png": "/portfolio/static/media/Portfolio.b87120a1b2f00527422b.png",
     "static/media/ConvenienceStore.png": "/portfolio/static/media/ConvenienceStore.2bb96ec78a244850db3e.png",
     "index.html": "/portfolio/index.html",
     "main.ff00fee0.css.map": "/portfolio/static/css/main.ff00fee0.css.map",
-    "main.a5966f17.js.map": "/portfolio/static/js/main.a5966f17.js.map",
+    "main.32113c65.js.map": "/portfolio/static/js/main.32113c65.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ff00fee0.css",
-    "static/js/main.a5966f17.js"
+    "static/js/main.32113c65.js"
   ]
 }
