@@ -12,6 +12,7 @@ const Project = () => {
             {
                 isDetailCardOpen ?
                 <ProjectDetailCard 
+                    isDetailCardOpen = {isDetailCardOpen}
                     setIsDetailCardOpen = {setIsDetailCardOpen}
                     projectIndex = {projectIndex}
                 />

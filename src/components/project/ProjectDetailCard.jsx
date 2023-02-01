@@ -1,19 +1,42 @@
-import React from "react";
-import { useState } from "react";
-import { useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { getProjectData } from "../../datas/ProjectData";
+import { useStopwatch } from "react-timer-hook";
 import "./ProjectDetailCard.css"
 
 const ProjectDetailCard = (props) =>{
+    const [projectData, setProjectData] = useState()
+    const modalRef = useRef(null);
+    const { isRunning, pause, reset } = useStopwatch({autoStart: false});
 
-    let [projectData, setProjectData] = useState()
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (modalRef.current && !modalRef.current.contains(event.target) && isRunning) {
+                props.setIsDetailCardOpen(false)
+            }
+        };
+    
+        document.addEventListener('click', handleClickOutside);
+    
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, [modalRef, isRunning]);
+
+    useEffect( () => {
+        if (props.isDetailCardOpen){
+            reset()
+        }
+        else{
+            pause()
+        }
+    },[props.isDetailCardOpen])
 
     useEffect( () => {
         setProjectData(getProjectData(props.projectIndex))
     },[props.projectIndex])
     
     return(
-        <div className="detail_card_container">
+        <div className="detail_card_container" ref={modalRef}>
             <div className="detail_card_top_bar">
                 <div className="closed_button" onClick={() => props.setIsDetailCardOpen(false)}>
                     X
