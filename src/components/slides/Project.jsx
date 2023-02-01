@@ -1,19 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ProjectList from "../project/ProjectList";
 import ProjectDetailCard from "../project/ProjectDetailCard";
 import "./Slides.css";
 
-const Project = () => {
-    const [isDetailCardOpen, setIsDetailCardOpen] = useState(false)
+const Project = (props) => {
     const [projectIndex, setProjectIndex] = useState(0)
 
     return(
         <div className="slide_container" style={{backgroundColor:"navy"}}>
             {
-                isDetailCardOpen ?
+                props.isDetailCardOpen ?
                 <ProjectDetailCard 
-                    isDetailCardOpen = {isDetailCardOpen}
-                    setIsDetailCardOpen = {setIsDetailCardOpen}
+                    isDetailCardOpen = {props.isDetailCardOpen}
+                    setIsDetailCardOpen = {props.setIsDetailCardOpen}
                     projectIndex = {projectIndex}
                 />
                 :
@@ -28,8 +27,8 @@ const Project = () => {
                 </div>
                 <div className="project_body_right">
                     <ProjectList 
-                        isDetailCardOpen = {isDetailCardOpen}
-                        setIsDetailCardOpen = {setIsDetailCardOpen}
+                        isDetailCardOpen = {props.isDetailCardOpen}
+                        setIsDetailCardOpen = {props.setIsDetailCardOpen}
                         setProjectIndex = {setProjectIndex}
                     />
                 </div>

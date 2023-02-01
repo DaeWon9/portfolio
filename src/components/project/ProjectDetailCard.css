@@ -40,23 +40,42 @@
     justify-content: center;
     width: 40%;
     height: 100%;
+    color: black;
+    margin-left: 3%;
 }
 
 .detail_card_body_right{
     color: black;
     width: 60%;
-    height: 100%;
+    height: 98%;
+    overflow-y: auto;
+}
+.detail_card_body_right::-webkit-scrollbar {
+    width: 13px;
+}
+.detail_card_body_right::-webkit-scrollbar-thumb {
+    background: rgb(127, 127, 127);
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+}
+
+.detail_card_body_right::-webkit-scrollbar-track{
+    border-radius: 10px;
 }
 
 .detail_card_title{
     text-align: center;
     font-size: x-large;
+    font-weight: 800;
 }
 
 .detail_card_background{
-    padding-top: 2%;
+    width: 80%;
+    padding-left: 10%;
 }
 
 .detail_card_extra{
-    padding-top: 2%;
+    width: 80%;
+    padding-left: 10%;
 }

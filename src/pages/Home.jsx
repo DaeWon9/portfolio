@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Mousewheel, Pagination } from 'swiper';
 import Introduction from "../components/slides/Introduction";
@@ -13,6 +13,17 @@ import "./Home.css"
 
 const Home = () => {
     const [swiper, setSwiper] = useState()
+    const [isDetailCardOpen, setIsDetailCardOpen] = useState(false)
+
+    useEffect( () => {
+        if (isDetailCardOpen){
+            swiper && swiper.mousewheel.disable()
+        }
+        else{
+            swiper && swiper.mousewheel.enable()
+        }
+
+    }, [isDetailCardOpen])
 
     return(
         <>
@@ -25,11 +36,11 @@ const Home = () => {
             }}
             direction={"vertical"}
             slidesPerView={1}
-            // spaceBetween={30}
             mousewheel={true}
             pagination={{
                 clickable: true,
             }}
+            allowTouchMove={true}
             speed={1000}
             modules={[Mousewheel, Pagination]}
             className="slider"
@@ -43,11 +54,14 @@ const Home = () => {
             </SwiperSlide>
             
             <SwiperSlide>
-                <Skills />
+                {({ isActive }) => <Skills isActive={isActive} setIsDetailCardOpen = {setIsDetailCardOpen} />}
             </SwiperSlide>
 
             <SwiperSlide>
-                <Project />
+                <Project 
+                    isDetailCardOpen = {isDetailCardOpen}
+                    setIsDetailCardOpen = {setIsDetailCardOpen}
+                />
             </SwiperSlide>
         </Swiper>
         </>

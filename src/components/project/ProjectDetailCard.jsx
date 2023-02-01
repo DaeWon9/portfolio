@@ -1,6 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import { getProjectData } from "../../datas/ProjectData";
 import { useStopwatch } from "react-timer-hook";
+import { Swiper } from "swiper/react";
+import { Pagination, Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import "./ProjectDetailCard.css"
 
 const ProjectDetailCard = (props) =>{
@@ -44,7 +49,16 @@ const ProjectDetailCard = (props) =>{
             </div>
             <div className="detail_card_body">
                 <div className="detail_card_body_left">
-                    <img src={projectData && projectData.image} width="100%" height="auto"></img>
+                    <Swiper
+                        pagination={{
+                            type: "fraction",
+                        }}
+                        navigation={true}
+                        modules={[Pagination, Navigation]}
+                        style={{height:"99%"}}
+                    >
+                        {projectData && projectData.image}
+                    </Swiper>
                 </div>
 
                 <div className="detail_card_body_right">
