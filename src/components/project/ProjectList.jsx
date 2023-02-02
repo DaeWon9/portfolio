@@ -19,9 +19,9 @@ const ProjectList = (props) =>{
 
     useEffect( () => {
         let cards = []
-        projectData.map( (project, index) => {
+        projectData.map( (project) => {
             cards.push({
-                key: index,
+                key: project.heading,
                 content: 
                 <ProjectCard 
                     image={project.thumbnailImage}
@@ -45,7 +45,7 @@ const ProjectList = (props) =>{
             showArrows={false}
             isDetailCardOpen = {props.isDetailCardOpen}
             setIsDetailCardOpen = {props.setIsDetailCardOpen}
-            setProjectIndex = {props.setProjectIndex}
+            setProjectKey = {props.setProjectKey}
         />
     );
 }

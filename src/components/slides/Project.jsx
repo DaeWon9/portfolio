@@ -5,7 +5,7 @@ import CategoryList from "../project/CategoryList";
 import "./Slides.css";
 
 const Project = (props) => {
-    const [projectIndex, setProjectIndex] = useState(0)
+    const [projectKey, setProjectKey] = useState("나홀로 편의점")
     const [category, setCategory] = useState('ALL')
 
     return(
@@ -15,7 +15,7 @@ const Project = (props) => {
                 <ProjectDetailCard 
                     isDetailCardOpen = {props.isDetailCardOpen}
                     setIsDetailCardOpen = {props.setIsDetailCardOpen}
-                    projectIndex = {projectIndex}
+                    projectKey = {projectKey}
                 />
                 :
                 <></>
@@ -35,7 +35,7 @@ const Project = (props) => {
                         category = {category}
                         isDetailCardOpen = {props.isDetailCardOpen}
                         setIsDetailCardOpen = {props.setIsDetailCardOpen}
-                        setProjectIndex = {setProjectIndex}
+                        setProjectKey = {setProjectKey}
                     />
                 </div>
             </div>

@@ -243,10 +243,11 @@ export const getAllProjectData = () => {
     return projectData
 }
 
-export const getProjectData = (index) => {
+export const getProjectData = (key) => {
     let projects = getAllProjectData()
-
-    return projects[index];
+    projects = projects.filter(project => project.heading === key)
+    
+    return projects;
 }
 
 export const getCategoryProjectData = (category) => {

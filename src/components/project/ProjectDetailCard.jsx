@@ -37,8 +37,8 @@ const ProjectDetailCard = (props) =>{
     },[props.isDetailCardOpen])
 
     useEffect( () => {
-        setProjectData(getProjectData(props.projectIndex))
-    },[props.projectIndex])
+        setProjectData(getProjectData(props.projectKey)[0])
+    },[props.projectKey])
     
     return(
         <div className="detail_card_container" ref={modalRef}>
