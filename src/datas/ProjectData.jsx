@@ -51,16 +51,16 @@ export const getAllProjectData = () => {
             
             image : <>
                         <SwiperSlide style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
-                            <img src={convenienceStroeImage.start} height="88%"></img>
+                            <img src={convenienceStroeImage.start} width="60%" height="88%"></img>
                         </SwiperSlide>
                         <SwiperSlide style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
-                            <img src={convenienceStroeImage.noodle} height="88%"></img>
+                            <img src={convenienceStroeImage.noodle} width="60%" height="88%"></img>
                         </SwiperSlide>
                         <SwiperSlide style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
-                            <img src={convenienceStroeImage.snack} height="88%"></img>
+                            <img src={convenienceStroeImage.snack} width="60%" height="88%"></img>
                         </SwiperSlide>
                         <SwiperSlide style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
-                            <img src={convenienceStroeImage.drink} height="88%"></img>
+                            <img src={convenienceStroeImage.drink} width="60%" height="88%"></img>
                         </SwiperSlide>
                     </>,
             background : <p>
@@ -170,7 +170,7 @@ export const getAllProjectData = () => {
             thumbnailImage : thumnailImage.sutda,
             date : "2022/05",
             heading : "Kakao Friends Sutda",
-            body : "카카오프렌즈 컨셉으로 제작한 섯다게임 입니다.",
+            body : "카카오프렌즈 컨셉으로 제작한 섯다게임입니다.",
             link : "https://github.com/DaeWon9/OpenSourceProject",
 
             image : <>
@@ -217,7 +217,7 @@ export const getAllProjectData = () => {
             thumbnailImage : thumnailImage.portfolio,
             date : "2023/02",
             heading : "Portfolio",
-            body : "포트폴리오 용도로 제작한 웹사이트입니다. 지금 보고 있는 바로 이 웹사이트 입니다.",
+            body : "포트폴리오 용도로 제작한 웹사이트입니다. 지금 보고 있는 바로 이 웹사이트입니다.",
             link : "https://github.com/DaeWon9/portfolio",
 
             image : <>
