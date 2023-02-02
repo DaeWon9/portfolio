@@ -42,7 +42,8 @@ export const getAllProjectData = () => {
     }
     
     let projectData = [
-        {
+        {// 나홀로 편의점
+            category : "APP, FRONT_END",
             thumbnailImage : thumnailImage.convenienceStore,
             date : "2022/08",
             heading : "나홀로 편의점",
@@ -81,7 +82,8 @@ export const getAllProjectData = () => {
                         </>
 
         },
-        {
+        {// lobster
+            category : "WEB, FRONT_END",
             thumbnailImage : thumnailImage.lobster,
             date : "2022/10",
             heading : "Lobster",
@@ -119,7 +121,8 @@ export const getAllProjectData = () => {
                             <p><strong>✤ Github : <a target="_blank" href='https://github.com/2Park1Jo/lobster'>https://github.com/2Park1Jo/lobster</a></strong></p>
                         </>
         },
-        {
+        {// eyetist
+            category : "WEB, FRONT_END",
             thumbnailImage : thumnailImage.eyetist,
             date : "2023/01",
             heading : "EyeTist",
@@ -166,7 +169,8 @@ export const getAllProjectData = () => {
                             <p><strong>✤ Github : <a target="_blank" href='https://github.com/Eyetist/Eyetist_Client'>https://github.com/Eyetist/Eyetist_Client</a></strong></p>
                         </>
         },
-        {
+        {// sutda
+            category : "ETC, FRONT_END",
             thumbnailImage : thumnailImage.sutda,
             date : "2022/05",
             heading : "Kakao Friends Sutda",
@@ -213,7 +217,8 @@ export const getAllProjectData = () => {
                             <p><strong>✤ Github : <a target="_blank" href='https://github.com/DaeWon9/OpenSourceProject'>https://github.com/DaeWon9/OpenSourceProject</a></strong></p>
                         </>
         },
-        {
+        {// portfolio
+            category : "WEB, FRONT_END",
             thumbnailImage : thumnailImage.portfolio,
             date : "2023/02",
             heading : "Portfolio",
@@ -242,4 +247,11 @@ export const getProjectData = (index) => {
     let projects = getAllProjectData()
 
     return projects[index];
+}
+
+export const getCategoryProjectData = (category) => {
+    let projects = getAllProjectData()
+    projects = projects.filter(project => project.category.includes(category))
+    
+    return projects;
 }

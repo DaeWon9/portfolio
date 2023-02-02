@@ -5,7 +5,7 @@ import "./Slides.css";
 const Introduction = (props) => {
 
     return(
-        <div className="slide_container" style={{backgroundColor:"wheat"}}>
+        <div className="slide_container" style={{backgroundColor:"bisque"}}>
             <div className="slide_header">
                 About Me
             </div>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import CustomCarousel from "./CustomCarousel";
-import { getAllProjectData } from "../../datas/ProjectData";
+import { getAllProjectData, getCategoryProjectData } from "../../datas/ProjectData";
 
 const ProjectList = (props) =>{
         
@@ -9,8 +9,13 @@ const ProjectList = (props) =>{
     let [projectData, setProjectData] = useState([]);
 
     useEffect( () => {
-        setProjectData(getAllProjectData())
-    }, []) 
+        if(props.category === 'ALL'){
+            setProjectData(getAllProjectData())
+        }
+        else{
+            setProjectData(getCategoryProjectData(props.category))
+        }
+    }, [props.category]) 
 
     useEffect( () => {
         let cards = []

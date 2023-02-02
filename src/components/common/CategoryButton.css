@@ -1,0 +1,13 @@
+.category_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: inherit;
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 60%;
+    height: 12%;
+    font-weight: 700;
+    color: white;
+}
