@@ -10,4 +10,5 @@
     height: 12%;
     font-weight: 700;
     color: white;
+    z-index: 100;
 }
