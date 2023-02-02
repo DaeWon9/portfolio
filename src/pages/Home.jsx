@@ -46,7 +46,7 @@ const Home = () => {
             className="slider"
         >
             <SwiperSlide>
-                <Introduction />
+                {({ isActive }) => <Introduction isActive={isActive}/>}
             </SwiperSlide>
 
             <SwiperSlide>

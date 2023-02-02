@@ -19,7 +19,7 @@ const Project = (props) => {
                 <></>
             }
             <div className="slide_header">
-                Project
+                PROJECTS
             </div>
             <div className="slide_body">
                 <div className="project_body_left">
