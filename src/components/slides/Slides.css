@@ -30,9 +30,9 @@
 }
 
 .introduction{
-    width: 80%;
+    width: 70%;
     height: 100%;
-    padding: 10%;
+    padding-left: 15%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -78,6 +78,17 @@
 @media (max-width: 480px) {
     .slide_body{
         display:block;
+    }
+    
+    .introduction{
+        width: 70%;
+        height: 100%;
+        padding-left: 15%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-size: xx-large;
+        font-weight: 700;
     }
 
     .career_left{
