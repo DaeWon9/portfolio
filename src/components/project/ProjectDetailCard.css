@@ -51,7 +51,6 @@
     overflow-y: auto;
 }
 
-
 @media (max-width: 480px) {
     .detail_card_container{
         position: absolute;
@@ -84,20 +83,6 @@
         height: 70%;
         overflow-y: auto;
     }
-}
-
-.detail_card_body_right::-webkit-scrollbar {
-    width: 13px;
-}
-.detail_card_body_right::-webkit-scrollbar-thumb {
-    background: rgb(127, 127, 127);
-    border-radius: 10px;
-    background-clip: padding-box;
-    border: 3px solid transparent;
-}
-
-.detail_card_body_right::-webkit-scrollbar-track{
-    border-radius: 10px;
 }
 
 .detail_card_title{

@@ -16,11 +16,15 @@ const Home = () => {
     const [isDetailCardOpen, setIsDetailCardOpen] = useState(false)
 
     useEffect( () => {
-        if (isDetailCardOpen){
-            swiper && swiper.mousewheel.disable()
-        }
-        else{
-            swiper && swiper.mousewheel.enable()
+        if (swiper){
+            if (isDetailCardOpen){
+                swiper.mousewheel.disable()
+                swiper.allowTouchMove = false
+            }
+            else{
+                swiper.mousewheel.enable()
+                swiper.allowTouchMove = true
+            }
         }
 
     }, [isDetailCardOpen])
