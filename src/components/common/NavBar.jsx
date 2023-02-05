@@ -14,7 +14,7 @@ const NavBar = (props) => {
             </div>
             <div className="nav_bar_buttons">
                 <div className="nav_bar_button" onClick={() => props.swiper.slideTo(INTRODUCTION)}>
-                    About Me
+                    About&nbsp;Me
                 </div>
                 <div className="nav_bar_button" onClick={() => props.swiper.slideTo(CAREER)}>
                     Career

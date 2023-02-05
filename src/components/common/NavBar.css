@@ -31,3 +31,27 @@
     font-weight: 600;
     color:navy;
 }
+
+@media (max-width: 480px) {
+    .nav_bar_container{
+        justify-content: space-between;
+        height: 8%;
+    }
+
+    .logo {
+        padding-left: 3%;
+    }
+    
+    .nav_bar_buttons{
+        padding-right: 10%;
+    }
+    
+    .nav_bar_button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 1%;
+        margin-right: 2%;
+    }
+}

@@ -1,0 +1,17 @@
+.profile_picture{
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    background-color: beige;
+    margin-right: 5%;
+}
+
+@media (max-width: 480px) {
+    .profile_picture{
+        width: 20vh;
+        height: 20vh;
+        border-radius: 20vh;
+        background-color: beige;
+        margin-left: 5%;
+    }
+}
