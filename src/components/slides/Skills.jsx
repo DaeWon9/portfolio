@@ -28,16 +28,19 @@ const Skills = (props) => {
                         <SkillBox 
                             title="Front_End"
                             icons={<img src={skillImage.front} width="80%"></img>}
+                            swiper = {props.swiper}
                         />
                     </div>
                     <div>
                         <SkillBox 
                             title="Back_end"
                             icons={<img src={skillImage.back} width="80%"></img>}
+                            swiper = {props.swiper}
                         />
                         <SkillBox 
                             title="APP"
                             icons={<img src={skillImage.app} width="80%"></img>}
+                            swiper = {props.swiper}
                         />
                     </div>
                 </div>

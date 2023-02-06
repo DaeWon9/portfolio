@@ -58,7 +58,7 @@ const Home = () => {
             </SwiperSlide>
             
             <SwiperSlide>
-                {({ isActive }) => <Skills isActive={isActive} setIsDetailCardOpen = {setIsDetailCardOpen} />}
+                {({ isActive }) => <Skills isActive={isActive} swiper={swiper} setIsDetailCardOpen={setIsDetailCardOpen} />}
             </SwiperSlide>
 
             <SwiperSlide>

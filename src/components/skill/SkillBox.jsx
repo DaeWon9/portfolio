@@ -5,7 +5,7 @@ import "./SkillBox.css"
 const SkillBox = (props) => {
 
     return(
-        <motion.div whileHover={{ scale: 1.1 }} className="skill_box">
+        <motion.div whileHover={{ scale: 1.1 }} className="skill_box" onMouseOver={() => props.swiper.allowTouchMove = false} onMouseLeave={() => props.swiper.allowTouchMove = true}>
             <div className="skill_box_title">
                 {props.title}
             </div>
