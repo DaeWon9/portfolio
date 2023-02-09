@@ -4,7 +4,7 @@ import "./Slides.css";
 
 const Career = () => {
     return(
-        <div className="slide_container" style={{backgroundColor:"blue"}}>
+        <div className="slide_container" style={{backgroundColor:"rgb(0, 0, 85)"}}>
             <div className="slide_header">
                 CAREER
             </div>

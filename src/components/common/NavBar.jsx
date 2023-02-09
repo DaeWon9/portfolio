@@ -10,7 +10,7 @@ const NavBar = (props) => {
     return(
         <div className="nav_bar_container">
             <div className="logo">
-                DaeWon
+                DaeWon's Portfolio
             </div>
             <div className="nav_bar_buttons">
                 <div className="nav_bar_button" onClick={() => props.swiper.slideTo(INTRODUCTION)}>
