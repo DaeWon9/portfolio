@@ -23,7 +23,10 @@ const Skills = (props) => {
                 SKILLS
             </div>
             <div className="slide_body">
-                <div className="skills_container">
+                <div className="skills_container"
+                    onTouchStart={() => props.swiper.allowTouchMove = false}
+                    onTouchEnd={() => props.swiper.allowTouchMove = true}
+                >
                     <div style={{marginRight:"2%"}}> 
                         <SkillBox 
                             title="Front_End"
