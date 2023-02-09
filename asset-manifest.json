@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a6e64741.css",
-    "main.js": "/portfolio/static/js/main.3499055d.js",
+    "main.css": "/portfolio/static/css/main.74bfefce.css",
+    "main.js": "/portfolio/static/js/main.941381fc.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/sutda3.png": "/portfolio/static/media/sutda3.23bdb593e6ec8687fb0a.png",
     "static/media/sutda10.png": "/portfolio/static/media/sutda10.8ae90dc58ea08cf2c0e8.png",
@@ -31,12 +31,12 @@
     "static/media/Portfolio.png": "/portfolio/static/media/Portfolio.b87120a1b2f00527422b.png",
     "static/media/ConvenienceStore.png": "/portfolio/static/media/ConvenienceStore.2bb96ec78a244850db3e.png",
     "index.html": "/portfolio/index.html",
-    "main.a6e64741.css.map": "/portfolio/static/css/main.a6e64741.css.map",
-    "main.3499055d.js.map": "/portfolio/static/js/main.3499055d.js.map",
+    "main.74bfefce.css.map": "/portfolio/static/css/main.74bfefce.css.map",
+    "main.941381fc.js.map": "/portfolio/static/js/main.941381fc.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6e64741.css",
-    "static/js/main.3499055d.js"
+    "static/css/main.74bfefce.css",
+    "static/js/main.941381fc.js"
   ]
 }
