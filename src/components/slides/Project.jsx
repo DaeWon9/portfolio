@@ -10,6 +10,18 @@ const Project = (props) => {
 
     return(
         <div className="slide_container" style={{backgroundColor:"rgb(0, 0, 85)"}}>
+            <ul className="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
             {
                 props.isDetailCardOpen ?
                 <ProjectDetailCard 
