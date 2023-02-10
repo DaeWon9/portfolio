@@ -33,12 +33,12 @@
 
 .nav_bar_menu_container{
     position: fixed;
-    margin-top: 10%;
-    padding-top: 5%;
+    margin-top: 8%;
+    padding-top: 15%;
     padding-bottom: 5%;
     width: 100%;
     background-color: aliceblue;
-    z-index: 999;
+    z-index: 998;
 }
 
 .nav_bar_menu{

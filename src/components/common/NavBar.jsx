@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useRecoilValue } from "recoil";
 import { WINDOW_SIZE } from "../../recoil/Atoms";
 import { TiThMenu } from "react-icons/ti"
@@ -14,6 +14,12 @@ const NavBar = (props) => {
 
     const windowSize = useRecoilValue(WINDOW_SIZE)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+    useEffect( () => {
+        if (windowSize.width > 480){
+            setIsMenuOpen(false)
+        }
+    }, [windowSize])
 
     return(
         <>        
