@@ -1,11 +1,15 @@
 import React from "react";
+import { useRecoilValue } from "recoil";
+import { WINDOW_SIZE } from "../../recoil/Atoms";
 import { motion } from "framer-motion"
 import "./SkillBox.css"
 
 const SkillBox = (props) => {
+    
+    const windowSize = useRecoilValue(WINDOW_SIZE)
 
     return(
-        window.innerWidth >= 480 ? 
+        windowSize.width >= 480 ? 
             <motion.div whileHover={{ scale: 1.1 }} className="skill_box">
                 <div className="skill_box_title">
                     {props.title}

@@ -31,6 +31,36 @@
     color:navy;
 }
 
+.nav_bar_menu_container{
+    position: fixed;
+    margin-top: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+    background-color: aliceblue;
+    z-index: 999;
+}
+
+.nav_bar_menu{
+    margin-left: 5%;
+    color: gray;
+    font-size: larger;
+    font-weight: 800;
+    padding-bottom: 2%;
+    cursor: pointer;
+}
+
+.nav_bar_menu_button{
+    margin-right: 5%;
+    padding: 1%; 
+    font-size: larger;
+    border : 1px solid gray;
+    color : gray;
+    border-radius: 5px;
+    line-height: 70%;
+    cursor: pointer;
+}
+
 @media (max-width: 480px) {
     .nav_bar_container{
         justify-content: space-between;
@@ -38,19 +68,6 @@
     }
 
     .logo {
-        padding-left: 3%;
-    }
-    
-    .nav_bar_buttons{
-        padding-right: 10%;
-    }
-    
-    .nav_bar_button{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        padding: 1%;
-        margin-right: 2%;
+        padding-left: 5%;
     }
 }
