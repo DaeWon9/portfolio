@@ -22,7 +22,7 @@ const Career = () => {
             🏆 2022 개방형 클라우드 플랫폼 기반 서비스 개발 공모전 특별상 수상
           </p>
           <p className="career_content">
-            🏆 2023 Microsoft Imagin Cup Asia 대표
+            🎖 2023 Microsoft Imagine Cup Asia 대표
           </p>
         </div>
       </div>
