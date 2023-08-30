@@ -35,10 +35,8 @@ const Home = () => {
         if (swiper) {
             if (isDetailCardOpen) {
                 swiper.mousewheel.disable();
-                swiper.allowTouchMove = false;
             } else {
                 swiper.mousewheel.enable();
-                swiper.allowTouchMove = true;
             }
         }
     }, [isDetailCardOpen]);
@@ -51,7 +49,7 @@ const Home = () => {
                 swiper.allowTouchMove = true;
             }
         }
-    }, [windowSize.width]);
+    }, [windowSize]);
 
     return (
         <>
