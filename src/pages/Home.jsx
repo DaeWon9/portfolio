@@ -17,7 +17,6 @@ const Home = () => {
     const [swiper, setSwiper] = useState();
     const [isDetailCardOpen, setIsDetailCardOpen] = useState(false);
     const [windowSize, setWindowSize] = useRecoilState(WINDOW_SIZE);
-    const [isAllowTouchMove, setIsAllowTouchMove] = useState(false);
 
     const handleResize = () => {
         let width = window.innerWidth;
@@ -54,8 +53,6 @@ const Home = () => {
             }
         }
     }, [windowSize]);
-
-    console.log(windowSize.width > 480 ? false : true);
 
     return (
         <>
