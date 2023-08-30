@@ -68,6 +68,18 @@
 .career_content {
     padding-left: 5%;
     font-size: larger;
+    color: white;
+}
+
+.career_content_link {
+    padding-left: 5%;
+    font-size: larger;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.career_content_link:hover {
+    text-decoration: underline;
 }
 
 .skills_container {
@@ -249,6 +261,11 @@
         padding-left: 4%;
         padding-right: 4%;
         font-size: larger;
+    }
+
+    .career_content_link {
+        color: white;
+        text-decoration: underline;
     }
 
     .skills_container {
