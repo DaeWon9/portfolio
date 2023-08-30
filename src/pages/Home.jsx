@@ -20,8 +20,7 @@ const Home = () => {
 
     const handleResize = () => {
         let width = window.innerWidth;
-        let height = window.innerHeight;
-        setWindowSize({ width: width, height: height });
+        setWindowSize({ width: width });
     };
 
     useEffect(() => {
@@ -52,7 +51,7 @@ const Home = () => {
                 swiper.allowTouchMove = true;
             }
         }
-    }, [windowSize]);
+    }, [windowSize.width]);
 
     return (
         <>
