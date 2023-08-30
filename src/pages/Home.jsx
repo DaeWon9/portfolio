@@ -35,8 +35,14 @@ const Home = () => {
         if (swiper) {
             if (isDetailCardOpen) {
                 swiper.mousewheel.disable();
+                if (windowSize.width < 480) {
+                    swiper.allowTouchMove = false;
+                }
             } else {
                 swiper.mousewheel.enable();
+                if (windowSize.width < 480) {
+                    swiper.allowTouchMove = true;
+                }
             }
         }
     }, [isDetailCardOpen]);
