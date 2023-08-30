@@ -1,12 +1,12 @@
-.skill_box{
-    width: 30vh;
+.skill_box {
+    width: 30vw;
     background-color: navy;
     border-radius: 10px;
     margin-right: 2%;
     margin-bottom: 8%;
 }
 
-.skill_box_title{
+.skill_box_title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,7 +15,7 @@
     padding-bottom: 5%;
 }
 
-.skill_box_icons_container{
+.skill_box_icons_container {
     display: flex;
     align-items: center;
     justify-content: center;
