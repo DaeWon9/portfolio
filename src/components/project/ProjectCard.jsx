@@ -48,7 +48,15 @@ const ProjectCard = ({ image, date, body, link, skills }) => {
     const [isHover, setIsHover] = useState(false);
     const [skillsDiv, setSkillsDiv] = useState([]);
 
-    const colors = ["#041C32", "#064663", "#F6635C", "#27005D"];
+    const darkColorList = [
+        "navy",
+        "#FF5733", // 진한 주황색
+        "#001f3f", // 진한 남색
+        "#B03A2E", // 진한 빨간색
+        "#006400", // 진한 녹색
+        "#002147", // 진한 파랑
+        "#333333", // 진한 회색
+    ];
 
     useEffect(() => {
         let chips = [];
@@ -57,7 +65,7 @@ const ProjectCard = ({ image, date, body, link, skills }) => {
                 <div
                     key={index}
                     className={styles.chips}
-                    style={{ backgroundColor: index > 3 ? colors[index % 4] : colors[index] }}
+                    style={{ backgroundColor: index > 6 ? darkColorList[index % 7] : darkColorList[index] }}
                 >
                     {value}
                 </div>
