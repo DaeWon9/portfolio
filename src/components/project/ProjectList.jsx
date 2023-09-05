@@ -27,6 +27,7 @@ const ProjectList = (props) => {
                         heading={project.heading}
                         body={project.body}
                         link={project.link}
+                        skills={project.skills}
                     />
                 ),
             });

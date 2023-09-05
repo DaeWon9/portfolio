@@ -1,4 +1,4 @@
-.detail_card_container{
+.detail_card_container {
     position: absolute;
     background-color: white;
     width: 70%;
@@ -9,7 +9,7 @@
     margin-top: 8%;
 }
 
-.detail_card_top_bar{
+.detail_card_top_bar {
     height: 5%;
     display: flex;
     justify-content: right;
@@ -17,24 +17,24 @@
     padding-right: 1%;
 }
 
-.detail_card_body{
+.detail_card_body {
     display: flex;
     height: 95%;
     width: 100%;
 }
 
-.closed_button{
+.closed_button {
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
     color: black;
 }
 
-.closed_button:hover{
+.closed_button:hover {
     background-color: gainsboro;
 }
 
-.detail_card_body_left{
+.detail_card_body_left {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,15 +44,45 @@
     margin-left: 3%;
 }
 
-.detail_card_body_right{
+.detail_card_body_right {
     color: black;
     width: 60%;
     height: 98%;
     overflow-y: auto;
 }
 
+.chips_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover_section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 10px;
+    color: #e9e9e9;
+    cursor: pointer;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.hover_section:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    transition-duration: 0.5s;
+}
+
 @media (max-width: 480px) {
-    .detail_card_container{
+    .detail_card_container {
         position: absolute;
         background-color: white;
         width: 90%;
@@ -62,13 +92,13 @@
         margin-left: 5%;
         margin-top: 8%;
     }
-    
-    .detail_card_body{
+
+    .detail_card_body {
         display: block;
         height: 95%;
         width: 100%;
     }
-    .detail_card_body_left{
+    .detail_card_body_left {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -76,8 +106,8 @@
         height: 30%;
         color: black;
     }
-    
-    .detail_card_body_right{
+
+    .detail_card_body_right {
         color: black;
         width: 100%;
         height: 70%;
@@ -85,18 +115,18 @@
     }
 }
 
-.detail_card_title{
+.detail_card_title {
     text-align: center;
     font-size: x-large;
     font-weight: 800;
 }
 
-.detail_card_background{
+.detail_card_background {
     width: 80%;
     padding-left: 10%;
 }
 
-.detail_card_extra{
+.detail_card_extra {
     width: 80%;
     padding-left: 10%;
 }

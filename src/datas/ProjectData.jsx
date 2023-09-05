@@ -50,6 +50,7 @@ export const getAllProjectData = () => {
             heading: "EyeTist",
             body: "손을 사용하기 힘드신분들을 위한 웹 드로잉 서비스입니다.",
             link: "https://github.com/Eyetist/Eyetist_Client",
+            skills: ["React", "JavaScript", "Azure"],
 
             image: (
                 <>
@@ -186,6 +187,7 @@ export const getAllProjectData = () => {
             heading: "나홀로 편의점",
             body: "시각장애인분들의 편의성 증진을 위한 품목 구별 앱서비스입니다.",
             link: "https://github.com/En-soso-com/Android",
+            skills: ["Android", "Java", "Python", "Pytorch", "Yolov5"],
 
             image: (
                 <>
@@ -296,6 +298,7 @@ export const getAllProjectData = () => {
             heading: "Kakao Friends Sutda",
             body: "카카오프렌즈 컨셉으로 제작한 섯다게임입니다.",
             link: "https://github.com/DaeWon9/OpenSourceProject",
+            skills: ["Python", "PyGame"],
 
             image: (
                 <>
@@ -414,6 +417,7 @@ export const getAllProjectData = () => {
             heading: "Portfolio",
             body: "포트폴리오 용도로 제작한 웹사이트입니다. 지금 보고 있는 바로 이 웹사이트입니다.",
             link: "https://github.com/DaeWon9/portfolio",
+            skills: ["React", "JavaScript"],
 
             image: (
                 <>
@@ -451,6 +455,7 @@ export const getAllProjectData = () => {
             heading: "Lobster",
             body: "대학생들의 조별과제 등 팀 단위로 이루어지는 협업을 도와주는 웹 커뮤니티 서비스입니다.",
             link: "https://github.com/2Park1Jo/lobster",
+            skills: ["React", "JavaScript", "Amazon S3", "NGINX"],
 
             image: (
                 <>
