@@ -55,6 +55,7 @@ const ProjectCard = ({ image, date, body, link, skills }) => {
         skills.map((value, index) => {
             chips.push(
                 <div
+                    key={index}
                     className={styles.chips}
                     style={{ backgroundColor: index > 3 ? colors[index % 4] : colors[index] }}
                 >
