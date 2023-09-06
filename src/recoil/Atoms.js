@@ -8,3 +8,8 @@ export const WINDOW_SIZE = atom({
         },
     ],
 });
+
+export const CENTER_PROJECT = atom({
+    key: "centerProject",
+    default: 0,
+});
