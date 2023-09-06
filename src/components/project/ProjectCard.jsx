@@ -7,6 +7,7 @@ import TextInfoContent from "@mui-treasury/components/content/textInfo";
 import { useN01TextInfoContentStyles } from "@mui-treasury/styles/textInfoContent/n01";
 import { useRecoilValue } from "recoil";
 import { CENTER_PROJECT, WINDOW_SIZE } from "../../recoil/Atoms";
+import { BiLogoGithub, BiSolidCommentDetail } from "react-icons/bi";
 
 const useStyles = makeStyles(() => ({
     root: {
@@ -38,6 +39,9 @@ const useStyles = makeStyles(() => ({
         color: "#e9e9e9",
     },
     button: {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
         width: "40%",
         margin: "auto",
         padding: "3%",
@@ -46,7 +50,7 @@ const useStyles = makeStyles(() => ({
         cursor: "pointer",
         border: "1px solid white",
         borderRadius: "5px",
-        fontSize: "small",
+        fontSize: "14px",
         "&:hover": {
             opacity: 0.8,
         },
@@ -60,10 +64,15 @@ const useStyles = makeStyles(() => ({
         cursor: "pointer",
         border: "1px solid #758BFF",
         borderRadius: "5px",
-        fontSize: "small",
+        fontSize: "14px",
         "&:hover": {
             opacity: 0.8,
         },
+    },
+    icon: {
+        float: "left",
+        marginTop: "1px",
+        fontSize: "17px",
     },
 }));
 
@@ -147,10 +156,12 @@ const ProjectCard = ({ index, image, date, body, link, skills, setIsDetailCardOp
                         }}
                     >
                         <div className={styles.buttonFilled} onClick={() => setIsDetailCardOpen(true)}>
+                            <BiSolidCommentDetail className={styles.icon} />
                             DETAIL
                         </div>
                         <div className={styles.button} onClick={() => moveLink()}>
-                            GITHUB
+                            <BiLogoGithub className={styles.icon} />
+                            &nbsp;GITHUB
                         </div>
                     </div>
                 </div>
