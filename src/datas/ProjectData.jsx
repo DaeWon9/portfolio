@@ -48,7 +48,7 @@ export const getAllProjectData = () => {
             thumbnailImage: thumnailImage.eyetist,
             date: "2023/01",
             heading: "EyeTist",
-            body: "손을 사용하기 힘드신분들을 위한 웹 드로잉 서비스입니다.",
+            body: "사용자의 얼굴을 인식하여 얼굴의 움직임을 통해 그림을 그릴 수 있는 웹 드로잉 서비스입니다.",
             link: "https://github.com/Eyetist/Eyetist_Client",
             skills: ["React", "JavaScript", "Azure"],
 
