@@ -17,17 +17,19 @@ const ProjectList = (props) => {
 
     useEffect(() => {
         let cards = [];
-        projectData.map((project) => {
+        projectData.map((project, index) => {
             cards.push({
                 key: project.heading,
                 content: (
                     <ProjectCard
+                        index={index}
                         image={project.thumbnailImage}
                         date={project.date}
                         heading={project.heading}
                         body={project.body}
                         link={project.link}
                         skills={project.skills}
+                        setIsDetailCardOpen={props.setIsDetailCardOpen}
                     />
                 ),
             });

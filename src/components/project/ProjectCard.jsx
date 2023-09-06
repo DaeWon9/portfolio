@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
 import { motion } from "framer-motion";
 import TextInfoContent from "@mui-treasury/components/content/textInfo";
 import { useN01TextInfoContentStyles } from "@mui-treasury/styles/textInfoContent/n01";
+import { useRecoilValue } from "recoil";
+import { CENTER_PROJECT, WINDOW_SIZE } from "../../recoil/Atoms";
 
 const useStyles = makeStyles(() => ({
     root: {
@@ -17,10 +18,6 @@ const useStyles = makeStyles(() => ({
     },
     content: {
         padding: 24,
-    },
-    cta: {
-        marginTop: 24,
-        textTransform: "initial",
     },
     media: {
         height: 0,
@@ -40,13 +37,44 @@ const useStyles = makeStyles(() => ({
         fontSize: "small",
         color: "#e9e9e9",
     },
+    button: {
+        width: "40%",
+        margin: "auto",
+        padding: "3%",
+        backgroundColor: "inherit",
+        color: "white",
+        cursor: "pointer",
+        border: "1px solid white",
+        borderRadius: "5px",
+        fontSize: "small",
+        "&:hover": {
+            opacity: 0.8,
+        },
+    },
+    buttonFilled: {
+        width: "40%",
+        margin: "auto",
+        padding: "3%",
+        backgroundColor: "#758BFF",
+        color: "white",
+        cursor: "pointer",
+        border: "1px solid #758BFF",
+        borderRadius: "5px",
+        fontSize: "small",
+        "&:hover": {
+            opacity: 0.8,
+        },
+    },
 }));
 
-const ProjectCard = ({ image, date, body, link, skills }) => {
+const ProjectCard = ({ index, image, date, body, link, skills, setIsDetailCardOpen }) => {
     const styles = useStyles();
     const textCardContentStyles = useN01TextInfoContentStyles();
     const [isHover, setIsHover] = useState(false);
+    const [isShowExtra, setIsShowExtra] = useState(false);
     const [skillsDiv, setSkillsDiv] = useState([]);
+    const centerProject = useRecoilValue(CENTER_PROJECT);
+    const windowSize = useRecoilValue(WINDOW_SIZE);
 
     const darkColorList = [
         "navy",
@@ -57,6 +85,14 @@ const ProjectCard = ({ image, date, body, link, skills }) => {
         "#002147", // 진한 파랑
         "#333333", // 진한 회색
     ];
+
+    useEffect(() => {
+        if (windowSize.width > 480 && isHover && centerProject == index) {
+            setIsShowExtra(true);
+        } else {
+            setIsShowExtra(false);
+        }
+    }, [isHover, centerProject]);
 
     useEffect(() => {
         let chips = [];
@@ -96,14 +132,27 @@ const ProjectCard = ({ image, date, body, link, skills }) => {
             <CardMedia className={styles.media} image={image} />
             <CardContent className={styles.content}>
                 <TextInfoContent classes={textCardContentStyles} overline={"Date : " + date} body={body} />
-                <Button color={"primary"} fullWidth className={styles.cta} onClick={() => moveLink()}>
-                    Go to github
-                </Button>
             </CardContent>
-            {isHover ? (
+            {isShowExtra ? (
                 <div className="hover_section">
                     <p>SKILLS</p>
                     <div className="chips_container">{skillsDiv}</div>
+                    <div
+                        style={{
+                            display: "flex",
+                            width: "100%",
+                            height: "20%",
+                            alignItems: "center",
+                            justifyContent: "end",
+                        }}
+                    >
+                        <div className={styles.buttonFilled} onClick={() => setIsDetailCardOpen(true)}>
+                            DETAIL
+                        </div>
+                        <div className={styles.button} onClick={() => moveLink()}>
+                            GITHUB
+                        </div>
+                    </div>
                 </div>
             ) : (
                 <></>
