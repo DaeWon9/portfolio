@@ -50,7 +50,23 @@ export const getAllProjectData = () => {
             heading: "EyeTist",
             body: "사용자의 얼굴을 인식하여 얼굴의 움직임을 통해 그림을 그릴 수 있는 웹 드로잉 서비스입니다.",
             link: "https://github.com/Eyetist/Eyetist_Client",
-            skills: ["React", "JavaScript", "Azure"],
+            skills: [
+                {
+                    name: "React",
+                    backgroundColor: "#61DAFB",
+                    color: "black",
+                },
+                {
+                    name: "JavaScript",
+                    backgroundColor: "#F7DF1E",
+                    color: "black",
+                },
+                {
+                    name: "Azure",
+                    backgroundColor: "#0078D4",
+                    color: "white",
+                },
+            ],
 
             image: (
                 <>
@@ -187,7 +203,33 @@ export const getAllProjectData = () => {
             heading: "나홀로 편의점",
             body: "시각장애인분들의 편의성 증진을 위한 품목 구별 앱서비스입니다.",
             link: "https://github.com/En-soso-com/Android",
-            skills: ["Android", "Java", "Python", "Pytorch", "Yolov5"],
+            skills: [
+                {
+                    name: "Android",
+                    backgroundColor: "#3DDC84",
+                    color: "black",
+                },
+                {
+                    name: "Java",
+                    backgroundColor: "#FF7800",
+                    color: "white",
+                },
+                {
+                    name: "Python",
+                    backgroundColor: "#3776AB",
+                    color: "white",
+                },
+                {
+                    name: "Pytorch",
+                    backgroundColor: "#EE4C2C",
+                    color: "white",
+                },
+                {
+                    name: "Yolov5",
+                    backgroundColor: "#00FFFF",
+                    color: "black",
+                },
+            ],
 
             image: (
                 <>
@@ -298,7 +340,16 @@ export const getAllProjectData = () => {
             heading: "Kakao Friends Sutda",
             body: "카카오프렌즈 컨셉으로 제작한 섯다게임입니다.",
             link: "https://github.com/DaeWon9/OpenSourceProject",
-            skills: ["Python", "PyGame"],
+            skills: [
+                {
+                    name: "Python",
+                    backgroundColor: "#3776AB",
+                },
+                {
+                    name: "PyGame",
+                    backgroundColor: "#3C2179",
+                },
+            ],
 
             image: (
                 <>
@@ -417,7 +468,18 @@ export const getAllProjectData = () => {
             heading: "Portfolio",
             body: "포트폴리오 용도로 제작한 웹사이트입니다. 지금 보고 있는 바로 이 웹사이트입니다.",
             link: "https://github.com/DaeWon9/portfolio",
-            skills: ["React", "JavaScript"],
+            skills: [
+                {
+                    name: "React",
+                    backgroundColor: "#61DAFB",
+                    color: "black",
+                },
+                {
+                    name: "JavaScript",
+                    backgroundColor: "#F7DF1E",
+                    color: "black",
+                },
+            ],
 
             image: (
                 <>
@@ -455,7 +517,28 @@ export const getAllProjectData = () => {
             heading: "Lobster",
             body: "대학생들의 조별과제 등 팀 단위로 이루어지는 협업을 도와주는 웹 커뮤니티 서비스입니다.",
             link: "https://github.com/2Park1Jo/lobster",
-            skills: ["React", "JavaScript", "Amazon S3", "NGINX"],
+            skills: [
+                {
+                    name: "React",
+                    backgroundColor: "#61DAFB",
+                    color: "black",
+                },
+                {
+                    name: "JavaScript",
+                    backgroundColor: "#F7DF1E",
+                    color: "black",
+                },
+                {
+                    name: "Amazon S3",
+                    backgroundColor: "#569A31",
+                    color: "white",
+                },
+                {
+                    name: "NGINX",
+                    backgroundColor: "#009639",
+                    color: "white",
+                },
+            ],
 
             image: (
                 <>
