@@ -37,7 +37,7 @@ const useStyles = makeStyles(() => ({
         paddingRight: "8px",
         marginRight: "5px",
         marginBottom: "5px",
-        fontSize: "small",
+        fontSize: "11px",
         color: "#e9e9e9",
     },
     button: {
