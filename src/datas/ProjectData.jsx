@@ -62,7 +62,7 @@ export const getAllProjectData = () => {
                     color: "black",
                 },
                 {
-                    name: "Azure",
+                    name: "Microsoft Azure",
                     backgroundColor: "#0078D4",
                     color: "white",
                 },
