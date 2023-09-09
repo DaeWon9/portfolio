@@ -31,8 +31,10 @@ const useStyles = makeStyles(() => ({
         width: "fit-content",
         height: "fit-content",
         borderRadius: "10px",
-        paddingLeft: "5px",
-        paddingRight: "5px",
+        paddingTop: "2px",
+        paddingBottom: "2px",
+        paddingLeft: "8px",
+        paddingRight: "8px",
         marginRight: "5px",
         marginBottom: "5px",
         fontSize: "small",
@@ -85,16 +87,6 @@ const ProjectCard = ({ index, image, date, body, link, skills, setIsDetailCardOp
     const centerProject = useRecoilValue(CENTER_PROJECT);
     const windowSize = useRecoilValue(WINDOW_SIZE);
 
-    const darkColorList = [
-        "navy",
-        "#FF5733", // 진한 주황색
-        "#001f3f", // 진한 남색
-        "#B03A2E", // 진한 빨간색
-        "#006400", // 진한 녹색
-        "#002147", // 진한 파랑
-        "#333333", // 진한 회색
-    ];
-
     useEffect(() => {
         if (windowSize.width > 480 && isHover && centerProject == index) {
             setIsShowExtra(true);
@@ -105,14 +97,14 @@ const ProjectCard = ({ index, image, date, body, link, skills, setIsDetailCardOp
 
     useEffect(() => {
         let chips = [];
-        skills.map((value, index) => {
+        skills.map((skill, index) => {
             chips.push(
                 <div
                     key={index}
                     className={styles.chips}
-                    style={{ backgroundColor: index > 6 ? darkColorList[index % 7] : darkColorList[index] }}
+                    style={{ color: skill.color, backgroundColor: skill.backgroundColor }}
                 >
-                    {value}
+                    {skill.name}
                 </div>
             );
         });
