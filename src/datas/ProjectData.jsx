@@ -118,7 +118,7 @@ export const getAllProjectData = () => {
                 </>
             ),
             background: (
-                <p>
+                <>
                     <p>
                         <strong>{"[2023 Microsoft Imagine Cup World Finalist]"}</strong>
                     </p>
@@ -128,7 +128,7 @@ export const getAllProjectData = () => {
                     알게되었습니다. 하지만, <strong>손을 사용하기 힘드신분들은 그림그리기에 제약사항이 많았고,</strong>{" "}
                     이에 <strong>얼굴을 움직여 그림그리는 서비스</strong>를 제공하면 좋을 것 같다는 생각에
                     추진하게되었습니다.
-                </p>
+                </>
             ),
             takeAway: (
                 <p>
@@ -572,7 +572,7 @@ export const getAllProjectData = () => {
                 </>
             ),
             background: (
-                <p>
+                <>
                     <p>
                         <strong>{"[2022 개방형 클라우드 플랫폼 기반 서비스 개발 공모전 특별상 수상작]"}</strong>
                     </p>
@@ -584,7 +584,7 @@ export const getAllProjectData = () => {
                     <br />
                     이에 <strong>프로젝트의 진행현황 및 파일을 효과적으로 관리</strong>할 수 있는 기능을 탑재한다면, 팀
                     단위로 협업을 진행하는 분들에게 도움이 될 것이라고 판단하여 개발을 추진하게 되었습니다.
-                </p>
+                </>
             ),
             takeAway: (
                 <p>
