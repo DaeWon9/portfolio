@@ -445,8 +445,32 @@ export const getAllProjectData = () => {
                     </SwiperSlide>
                 </>
             ),
-            background: <p></p>,
-            takeAway: <p></p>,
+            background: (
+                <p>
+                    버킷리스트중 하나가 <strong>"나만의 게임을 만들어보자"</strong> 였습니다. 학기 중 오픈소스를
+                    활용하는 프로젝트를 진행하게 되었고, 이에 <strong>Python기반 오픈소스인 Pygame</strong>을 사용하여{" "}
+                    <strong>카카오프렌즈 컨셉</strong>의 <strong>섯다게임</strong>을 만들게 되었습니다.
+                </p>
+            ),
+            takeAway: (
+                <p>
+                    이 프로젝트는 <strong>오픈소스를</strong> 활용해 보는 프로젝트였습니다. 그 과정에서{" "}
+                    <strong>Pygame 라이브러리</strong>를 사용하였고 Pygame에서 제공해 주는 다양한 함수들을 사용하여
+                    개발을 해보니,{" "}
+                    <strong>해당 정보를 처음 접하는 개발자들에게 오픈소스가 수많은 시행착오를 줄여준다는 것</strong>이
+                    실감이 났습니다. 또한 부수적으로 필요한 정보를 얻기 위해 <strong>공식 문서를</strong> 찾아보는 법을
+                    익힐 수 있었습니다.
+                    <br />
+                    <br />{" "}
+                    <strong>
+                        직접 게임콘텐츠 설계를 해보는 경험, 포토샵 작업을 통해 사용자 친화적인 UX/UI를 만들어보는
+                    </strong>{" "}
+                    값진 경험을 한 프로젝트입니다. <br /> <br />
+                    추가로 <strong>저작권이 있는 이미지를</strong> 사용했기에 <strong>저작권 문제에</strong> 대해 다시
+                    한번 생각해 보았고, 규모가 있는 프로젝트에서 <strong>협업의 중요성</strong>과{" "}
+                    <strong>코드 분리의 필요성</strong>을 느꼈습니다.
+                </p>
+            ),
             service: (
                 <>
                     <p>
@@ -494,7 +518,23 @@ export const getAllProjectData = () => {
                     </SwiperSlide>
                 </>
             ),
-            background: <p></p>,
+            background: (
+                <p>
+                    포트폴리오 용도로 개발한 웹사이트입니다. <strong>"React + JavaScript"</strong> 조합으로 개발을
+                    진행하였습니다.
+                    <br />
+                    <br />
+                    <strong>자기소개, 인적사항, 수상경력, 기술스택, 프로젝트 경험</strong>을 나타내기 위한 용도입니다.
+                    <br />
+                    <br />
+                    CSS3 미디어 쿼리 <strong>@media</strong>를 사용하여 <strong>Mobile</strong>과 <strong>PC</strong>{" "}
+                    환경에 맞춘 <strong>반응형 웹 디자인</strong>을 하였습니다.
+                    <br />
+                    <br />
+                    <strong>GitHub</strong>에서 제공하는 정적 웹페이지 호스팅 서비스인 <strong>GitHub Pages</strong>를
+                    이용하여 배포를 진행하였습니다.
+                </p>
+            ),
             takeAway: <p></p>,
             service: (
                 <>
