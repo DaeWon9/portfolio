@@ -39,6 +39,8 @@ const useStyles = makeStyles(() => ({
         marginBottom: "5px",
         fontSize: "11px",
         color: "#e9e9e9",
+        border: "1px solid gainsboro",
+        cursor: "default",
     },
     button: {
         display: "flex",
@@ -99,13 +101,14 @@ const ProjectCard = ({ index, image, date, body, link, skills, setIsDetailCardOp
         let chips = [];
         skills.map((skill, index) => {
             chips.push(
-                <div
+                <motion.div
+                    whileHover={{ scale: 1.1 }}
                     key={index}
                     className={styles.chips}
                     style={{ color: skill.color, backgroundColor: skill.backgroundColor }}
                 >
                     {skill.name}
-                </div>
+                </motion.div>
             );
         });
 
