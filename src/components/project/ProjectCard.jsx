@@ -7,7 +7,7 @@ import TextInfoContent from "@mui-treasury/components/content/textInfo";
 import { useN01TextInfoContentStyles } from "@mui-treasury/styles/textInfoContent/n01";
 import { useRecoilValue } from "recoil";
 import { CENTER_PROJECT, WINDOW_SIZE } from "../../recoil/Atoms";
-import { BiLogoGithub, BiSolidCommentDetail } from "react-icons/bi";
+import { BiLogoGithub, BiSolidCommentDetail, BiLogoReact } from "react-icons/bi";
 
 const useStyles = makeStyles(() => ({
     root: {
@@ -28,6 +28,9 @@ const useStyles = makeStyles(() => ({
         borderTopRightRadius: 30,
     },
     chips: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
         width: "fit-content",
         height: "fit-content",
         borderRadius: "10px",
@@ -107,6 +110,7 @@ const ProjectCard = ({ index, image, date, body, link, skills, setIsDetailCardOp
                     className={styles.chips}
                     style={{ color: skill.color, backgroundColor: skill.backgroundColor }}
                 >
+                    {skill.icon}
                     {skill.name}
                 </motion.div>
             );

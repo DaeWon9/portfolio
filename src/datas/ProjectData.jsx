@@ -1,4 +1,9 @@
 import { SwiperSlide } from "swiper/react";
+import { FaReact, FaAmazon } from "react-icons/fa";
+import { SiJavascript, SiMicrosoftazure, SiNginx, SiPython, SiPytorch, SiYolo } from "react-icons/si";
+import { BsAndroid } from "react-icons/bs";
+import { LiaJava } from "react-icons/lia";
+import { GiSnakeTongue } from "react-icons/gi";
 
 export const getAllProjectData = () => {
     const thumnailImage = {
@@ -53,16 +58,19 @@ export const getAllProjectData = () => {
             skills: [
                 {
                     name: "React",
+                    icon: <FaReact style={{ paddingRight: "2px" }} />,
                     backgroundColor: "#61DAFB",
                     color: "black",
                 },
                 {
                     name: "JavaScript",
+                    icon: <SiJavascript style={{ paddingRight: "2px" }} />,
                     backgroundColor: "#F7DF1E",
                     color: "black",
                 },
                 {
                     name: "Microsoft Azure",
+                    icon: <SiMicrosoftazure style={{ paddingRight: "2px" }} />,
                     backgroundColor: "#0078D4",
                     color: "white",
                 },
@@ -206,26 +214,31 @@ export const getAllProjectData = () => {
             skills: [
                 {
                     name: "Android",
+                    icon: <BsAndroid style={{ paddingRight: "2px" }} />,
                     backgroundColor: "#3DDC84",
                     color: "black",
                 },
                 {
                     name: "Java",
+                    icon: <LiaJava style={{ paddingRight: "2px" }} />,
                     backgroundColor: "#FF7800",
                     color: "white",
                 },
                 {
                     name: "Python",
+                    icon: <SiPython style={{ paddingRight: "2px" }} />,
                     backgroundColor: "#3776AB",
                     color: "white",
                 },
                 {
                     name: "Pytorch",
+                    icon: <SiPytorch style={{ paddingRight: "2px" }} />,
                     backgroundColor: "#EE4C2C",
                     color: "white",
                 },
                 {
                     name: "Yolov5",
+                    icon: <SiYolo style={{ paddingRight: "2px" }} />,
                     backgroundColor: "#00FFFF",
                     color: "black",
                 },
@@ -343,10 +356,12 @@ export const getAllProjectData = () => {
             skills: [
                 {
                     name: "Python",
+                    icon: <SiPython style={{ paddingRight: "2px" }} />,
                     backgroundColor: "#3776AB",
                 },
                 {
                     name: "PyGame",
+                    icon: <GiSnakeTongue style={{ paddingRight: "2px" }} />,
                     backgroundColor: "#3C2179",
                 },
             ],
@@ -495,11 +510,13 @@ export const getAllProjectData = () => {
             skills: [
                 {
                     name: "React",
+                    icon: <FaReact style={{ paddingRight: "2px" }} />,
                     backgroundColor: "#61DAFB",
                     color: "black",
                 },
                 {
                     name: "JavaScript",
+                    icon: <SiJavascript style={{ paddingRight: "2px" }} />,
                     backgroundColor: "#F7DF1E",
                     color: "black",
                 },
@@ -560,21 +577,25 @@ export const getAllProjectData = () => {
             skills: [
                 {
                     name: "React",
+                    icon: <FaReact style={{ paddingRight: "2px" }} />,
                     backgroundColor: "#61DAFB",
                     color: "black",
                 },
                 {
                     name: "JavaScript",
+                    icon: <SiJavascript style={{ paddingRight: "2px" }} />,
                     backgroundColor: "#F7DF1E",
                     color: "black",
                 },
                 {
                     name: "Amazon S3",
+                    icon: <FaAmazon style={{ paddingRight: "2px" }} />,
                     backgroundColor: "#569A31",
                     color: "white",
                 },
                 {
                     name: "NGINX",
+                    icon: <SiNginx style={{ paddingRight: "2px" }} />,
                     backgroundColor: "#009639",
                     color: "white",
                 },
