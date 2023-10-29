@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3bd0dc63.css",
-    "main.js": "/portfolio/static/js/main.53b459cb.js",
+    "main.js": "/portfolio/static/js/main.354902be.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/sutda3.png": "/portfolio/static/media/sutda3.23bdb593e6ec8687fb0a.png",
     "static/media/sutda10.png": "/portfolio/static/media/sutda10.8ae90dc58ea08cf2c0e8.png",
@@ -21,22 +21,25 @@
     "static/media/statistics.png": "/portfolio/static/media/statistics.af81363f1123ba70d930.png",
     "static/media/workspace.png": "/portfolio/static/media/workspace.12a6c0d12bee841aede7.png",
     "static/media/back_icons.png": "/portfolio/static/media/back_icons.d4f6fc429c1cd91b638b.png",
+    "static/media/keywordHelper2.jpg": "/portfolio/static/media/keywordHelper2.434ab221f7055e24ebcf.jpg",
+    "static/media/keywordHelper1.jpg": "/portfolio/static/media/keywordHelper1.3ca015d20e01e60c3206.jpg",
     "static/media/noodle.jpeg": "/portfolio/static/media/noodle.860adeebbd46023acae2.jpeg",
     "static/media/snack.jpeg": "/portfolio/static/media/snack.45a4c6d11f2cc7141fc3.jpeg",
     "static/media/app_icons.png": "/portfolio/static/media/app_icons.81fb13c30d246e0526fe.png",
     "static/media/Sutda.jpeg": "/portfolio/static/media/Sutda.c91a2fc8eaa1ead2877a.jpeg",
     "static/media/drink.jpeg": "/portfolio/static/media/drink.0da7d7835c12dd01c55a.jpeg",
     "static/media/Eyetist.png": "/portfolio/static/media/Eyetist.fcc22e9ba307049f0654.png",
+    "static/media/KeywordHelper.png": "/portfolio/static/media/KeywordHelper.5aec372df3ee495e9e4b.png",
     "static/media/Lobster.png": "/portfolio/static/media/Lobster.472f786d6b9a7e0c4a63.png",
     "static/media/Portfolio.png": "/portfolio/static/media/Portfolio.b87120a1b2f00527422b.png",
     "static/media/ConvenienceStore.png": "/portfolio/static/media/ConvenienceStore.2bb96ec78a244850db3e.png",
     "index.html": "/portfolio/index.html",
     "main.3bd0dc63.css.map": "/portfolio/static/css/main.3bd0dc63.css.map",
-    "main.53b459cb.js.map": "/portfolio/static/js/main.53b459cb.js.map",
+    "main.354902be.js.map": "/portfolio/static/js/main.354902be.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3bd0dc63.css",
-    "static/js/main.53b459cb.js"
+    "static/js/main.354902be.js"
   ]
 }
