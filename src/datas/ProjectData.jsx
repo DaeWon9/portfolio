@@ -662,8 +662,8 @@ export const getAllProjectData = () => {
                     <strong>✤ 채팅내역이 수백개씩 밀리는 경우 대화의 요점 파악이 어려움.</strong>
                     <br />
                     <br />
-                    위와 같은 문제점들을 해결하기위해, <strong>OpenAI</strong>를 사용하여 협업공간 내의{" "}
-                    <strong>채팅내역을 분석</strong>
+                    위와 같은 문제점들을 해결하기위해, <strong>OpenAI</strong>를 사용하여 협업공간 내의 원하는 시간대의
+                    <strong> 채팅내역을 분석</strong>
                     하여{" "}
                     <strong>
                         <span style={{ color: "#ed3770" }}>"Keyword balloon"</span>
