@@ -4,6 +4,8 @@ import { SiJavascript, SiMicrosoftazure, SiNginx, SiPython, SiPytorch, SiYolo } 
 import { BsAndroid } from "react-icons/bs";
 import { LiaJava } from "react-icons/lia";
 import { GiSnakeTongue } from "react-icons/gi";
+import { SiVite, SiOpenai } from "react-icons/si";
+import { TbBrandMysql } from "react-icons/tb";
 
 export const getAllProjectData = () => {
     const thumnailImage = {
@@ -12,6 +14,7 @@ export const getAllProjectData = () => {
         eyetist: require("../assets/thunmnailImage/Eyetist.png"),
         sutda: require("../assets/thunmnailImage/Sutda.jpeg"),
         portfolio: require("../assets/thunmnailImage/Portfolio.png"),
+        keywordHelper: require("../assets/thunmnailImage/KeywordHelper.png"),
     };
 
     const convenienceStroeImage = {
@@ -44,6 +47,11 @@ export const getAllProjectData = () => {
         page8: require("../assets/Image/sutda/sutda8.png"),
         page9: require("../assets/Image/sutda/sutda9.png"),
         page10: require("../assets/Image/sutda/sutda10.png"),
+    };
+
+    const keywordHelperImage = {
+        page1: require("../assets/Image/keywordHelper/keywordHelper1.jpg"),
+        page2: require("../assets/Image/keywordHelper/keywordHelper2.jpg"),
     };
 
     let projectData = [
@@ -568,6 +576,117 @@ export const getAllProjectData = () => {
                 </>
             ),
         },
+        {
+            // keyword Helper
+            category: "WEB, FRONT_END",
+            thumbnailImage: thumnailImage.keywordHelper,
+            date: "2023/02",
+            heading: "Keyword Helper",
+            body: "OpenAI를 활용한 키워드 추출 및 해당 키워드가 포함된 대화 요약 서비스입니다.",
+            link: "https://github.com/DaeWon9/keyword-helper-front",
+            skills: [
+                {
+                    name: "React",
+                    icon: <FaReact style={{ paddingRight: "2px" }} />,
+                    backgroundColor: "#61DAFB",
+                    color: "black",
+                },
+                {
+                    name: "Vite",
+                    icon: <SiVite style={{ paddingRight: "2px" }} />,
+                    backgroundColor: "#646CFF",
+                    color: "white",
+                },
+                {
+                    name: "JavaScript",
+                    icon: <SiJavascript style={{ paddingRight: "2px" }} />,
+                    backgroundColor: "#F7DF1E",
+                    color: "black",
+                },
+                {
+                    name: "MySql",
+                    icon: <TbBrandMysql style={{ paddingRight: "2px" }} />,
+                    backgroundColor: "#4479A1",
+                    color: "white",
+                },
+                {
+                    name: "OpenAI",
+                    icon: <SiOpenai style={{ paddingRight: "2px" }} />,
+                    backgroundColor: "#412991",
+                    color: "white",
+                },
+            ],
+
+            image: (
+                <>
+                    <SwiperSlide
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                        }}
+                    >
+                        <img src={keywordHelperImage.page1} width="100%"></img>
+                    </SwiperSlide>
+                    <SwiperSlide
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                        }}
+                    >
+                        <img src={keywordHelperImage.page2} width="100%"></img>
+                    </SwiperSlide>
+                </>
+            ),
+            background: (
+                <p>
+                    <p>
+                        <strong>{"[ 채널톡 HACKY-TALKY 챌린저스 1기 해커톤 ]"}</strong>
+                    </p>
+                    채널톡에서 진행된 해커톤에서 진행한 프로젝트입니다.
+                    <br />
+                    <strong>"커뮤니케이션"</strong>
+                    이라는 주제를 가지고 진행되었는데, 저희팀은
+                    <strong>"소통"</strong>에 중점을 맞추어{" "}
+                    <strong>
+                        <span style={{ color: "#ed3770" }}>협업과정에서 나타날 수 있는 문제점</span>
+                    </strong>
+                    을 해결 하고자 하였습니다.
+                    <br />
+                    <br />
+                    <strong>{"[문제점]"}</strong>
+                    <br />
+                    <strong>✤ 대화도중 나타나는 어려운 전문용어.</strong>
+                    <br />
+                    <strong>✤ 채팅내역이 수백개씩 밀리는 경우 대화의 요점 파악이 어려움.</strong>
+                    <br />
+                    <br />
+                    위와 같은 문제점들을 해결하기위해, <strong>OpenAI</strong>를 사용하여 협업공간 내의{" "}
+                    <strong>채팅내역을 분석</strong>
+                    하여{" "}
+                    <strong>
+                        <span style={{ color: "#ed3770" }}>"Keyword balloon"</span>
+                    </strong>
+                    으로 시각화하고 그 중 하나를 클릭하면 해당 <strong>키워드의 의미</strong>뿐만 아니라 해당 키워드와
+                    <strong> 연관되어있는 채팅내역</strong>을 <strong>요약</strong>해서 보여줍니다.
+                </p>
+            ),
+            takeAway: <p></p>,
+            service: (
+                <>
+                    <p>
+                        <strong>
+                            ✤ Github :{" "}
+                            <a target="_blank" href="https://github.com/DaeWon9/keyword-helper-front">
+                                https://github.com/DaeWon9/keyword-helper-front
+                            </a>
+                        </strong>
+                    </p>
+                </>
+            ),
+        },
+
         {
             // lobster
             award: "🏆 2022 개방형 클라우드 플랫폼 기반 \n 서비스 개발 공모전 [ 특별상 ]",
