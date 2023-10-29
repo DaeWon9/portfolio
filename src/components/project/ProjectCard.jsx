@@ -83,7 +83,7 @@ const useStyles = makeStyles(() => ({
     },
 }));
 
-const ProjectCard = ({ index, image, date, body, link, skills, setIsDetailCardOpen }) => {
+const ProjectCard = ({ index, award, image, date, body, link, skills, setIsDetailCardOpen }) => {
     const styles = useStyles();
     const textCardContentStyles = useN01TextInfoContentStyles();
     const [isHover, setIsHover] = useState(false);
@@ -142,28 +142,31 @@ const ProjectCard = ({ index, image, date, body, link, skills, setIsDetailCardOp
                 <TextInfoContent classes={textCardContentStyles} overline={"Date : " + date} body={body} />
             </CardContent>
             {isShowExtra ? (
-                <div className="hover_section">
-                    <p>SKILLS</p>
-                    <div className="chips_container">{skillsDiv}</div>
-                    <div
-                        style={{
-                            display: "flex",
-                            width: "100%",
-                            height: "20%",
-                            alignItems: "center",
-                            justifyContent: "end",
-                        }}
-                    >
-                        <div className={styles.buttonFilled} onClick={() => setIsDetailCardOpen(true)}>
-                            <BiSolidCommentDetail className={styles.icon} />
-                            DETAIL
-                        </div>
-                        <div className={styles.button} onClick={() => moveLink()}>
-                            <BiLogoGithub className={styles.icon} />
-                            &nbsp;GITHUB
+                <>
+                    <div className="hover_section">
+                        {award ? <p className="award_title">{award}</p> : <></>}
+                        <p>SKILLS</p>
+                        <div className="chips_container">{skillsDiv}</div>
+                        <div
+                            style={{
+                                display: "flex",
+                                width: "100%",
+                                height: "20%",
+                                alignItems: "center",
+                                justifyContent: "end",
+                            }}
+                        >
+                            <div className={styles.buttonFilled} onClick={() => setIsDetailCardOpen(true)}>
+                                <BiSolidCommentDetail className={styles.icon} />
+                                DETAIL
+                            </div>
+                            <div className={styles.button} onClick={() => moveLink()}>
+                                <BiLogoGithub className={styles.icon} />
+                                &nbsp;GITHUB
+                            </div>
                         </div>
                     </div>
-                </div>
+                </>
             ) : (
                 <></>
             )}

@@ -49,6 +49,7 @@ export const getAllProjectData = () => {
     let projectData = [
         {
             // eyetist
+            award: "🎖 2023 Microsoft Imagine Cup \n World Finalists [ Asia 대표 ]",
             category: "WEB, FRONT_END",
             thumbnailImage: thumnailImage.eyetist,
             date: "2023/01",
@@ -205,6 +206,7 @@ export const getAllProjectData = () => {
         },
         {
             // 나홀로 편의점
+            award: "🥇 세종대학교 제 4회 소프트웨어학과 \n 학술제 [ 최우수상 ]",
             category: "APP, FRONT_END",
             thumbnailImage: thumnailImage.convenienceStore,
             date: "2022/08",
@@ -568,6 +570,7 @@ export const getAllProjectData = () => {
         },
         {
             // lobster
+            award: "🏆 2022 개방형 클라우드 플랫폼 기반 \n 서비스 개발 공모전 [ 특별상 ]",
             category: "WEB, FRONT_END",
             thumbnailImage: thumnailImage.lobster,
             date: "2022/10",
