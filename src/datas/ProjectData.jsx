@@ -640,7 +640,7 @@ export const getAllProjectData = () => {
                 </>
             ),
             background: (
-                <p>
+                <>
                     <p>
                         <strong>{"[ 채널톡 HACKY-TALKY 챌린저스 1기 해커톤 ]"}</strong>
                     </p>
@@ -670,7 +670,7 @@ export const getAllProjectData = () => {
                     </strong>
                     으로 시각화하고 그 중 하나를 클릭하면 해당 <strong>키워드의 의미</strong>뿐만 아니라 해당 키워드와
                     <strong> 연관되어있는 채팅내역</strong>을 <strong>요약</strong>해서 보여줍니다.
-                </p>
+                </>
             ),
             takeAway: <p></p>,
             service: (

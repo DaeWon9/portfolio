@@ -7,7 +7,7 @@ import TextInfoContent from "@mui-treasury/components/content/textInfo";
 import { useN01TextInfoContentStyles } from "@mui-treasury/styles/textInfoContent/n01";
 import { useRecoilValue } from "recoil";
 import { CENTER_PROJECT, WINDOW_SIZE } from "../../recoil/Atoms";
-import { BiLogoGithub, BiSolidCommentDetail, BiLogoReact } from "react-icons/bi";
+import { BiLogoGithub, BiSolidCommentDetail } from "react-icons/bi";
 
 const useStyles = makeStyles(() => ({
     root: {

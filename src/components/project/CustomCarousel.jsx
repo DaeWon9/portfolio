@@ -35,6 +35,15 @@ const CustomCarousel = (props) => {
     }
 
     useEffect(() => {
+        if (currentSlide.current >= props.cards.length) {
+            if (props.cards.length > 0) {
+                setCenterProject(props.cards.length - 1);
+                setGoToSlide(props.cards.length - 1);
+            }
+        }
+    }, [props.cards]);
+
+    useEffect(() => {
         if (!props.isDetailCardOpen) {
             currentSlide.current = goToSlide;
         }

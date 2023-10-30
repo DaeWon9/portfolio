@@ -40,6 +40,7 @@ const ProjectList = (props) => {
 
     return (
         <CustomCarousel
+            category={props.category}
             cards={projectCards}
             height="100%"
             width="100%"
