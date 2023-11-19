@@ -8,7 +8,10 @@ const Career = () => {
             <div className="slide_header">CAREER</div>
             <div className="slide_body">
                 <div className="career_left">
-                    <ProfilePicture />
+                    <ProfilePicture
+                        image={require("../../assets/Image/profile/profileImage1.png")}
+                        backgroundColor="white"
+                    />
                 </div>
                 <div className="career_right">
                     <p className="career_content">🎓 Department of Software in Sejong Univ.</p>

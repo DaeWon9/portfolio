@@ -1,13 +1,20 @@
-.profile_picture{
+.profile_picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 35vh;
     height: 35vh;
     border-radius: 35vh;
-    background-color: aliceblue;
     margin-right: 5%;
 }
 
+.profile_image {
+    width: 70%;
+    height: 70%;
+}
+
 @media (max-width: 480px) {
-    .profile_picture{
+    .profile_picture {
         width: 25vh;
         height: 25vh;
         border-radius: 25vh;

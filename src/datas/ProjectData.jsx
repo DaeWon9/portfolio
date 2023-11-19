@@ -5,7 +5,7 @@ import { BsAndroid } from "react-icons/bs";
 import { LiaJava } from "react-icons/lia";
 import { GiSnakeTongue } from "react-icons/gi";
 import { SiVite, SiOpenai } from "react-icons/si";
-import { TbBrandMysql } from "react-icons/tb";
+import { TbBrandMysql, TbBrandSocketIo } from "react-icons/tb";
 
 export const getAllProjectData = () => {
     const thumnailImage = {
@@ -602,6 +602,12 @@ export const getAllProjectData = () => {
                     icon: <SiJavascript style={{ paddingRight: "2px" }} />,
                     backgroundColor: "#F7DF1E",
                     color: "black",
+                },
+                {
+                    name: "SocketIo",
+                    icon: <TbBrandSocketIo style={{ paddingRight: "2px" }} />,
+                    backgroundColor: "#010101",
+                    color: "white",
                 },
                 {
                     name: "MySql",
