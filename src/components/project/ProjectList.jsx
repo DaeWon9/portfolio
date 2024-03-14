@@ -23,6 +23,7 @@ const ProjectList = (props) => {
                 content: (
                     <ProjectCard
                         index={index}
+                        projectMembers={project.projectMembers}
                         award={project.award}
                         image={project.thumbnailImage}
                         date={project.date}

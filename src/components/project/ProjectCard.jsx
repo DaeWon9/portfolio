@@ -83,7 +83,7 @@ const useStyles = makeStyles(() => ({
     },
 }));
 
-const ProjectCard = ({ index, award, image, date, body, link, skills, setIsDetailCardOpen }) => {
+const ProjectCard = ({ index, projectMembers, award, image, date, body, link, skills, setIsDetailCardOpen }) => {
     const styles = useStyles();
     const textCardContentStyles = useN01TextInfoContentStyles();
     const [isHover, setIsHover] = useState(false);
@@ -144,6 +144,15 @@ const ProjectCard = ({ index, award, image, date, body, link, skills, setIsDetai
             {isShowExtra ? (
                 <>
                     <div className="hover_section">
+                        {projectMembers ? (
+                            <p className="award_title">
+                                {"["}
+                                {projectMembers}
+                                {"인 PROJECT]"}
+                            </p>
+                        ) : (
+                            <></>
+                        )}
                         {award ? <p className="award_title">{award}</p> : <></>}
                         <p>SKILLS</p>
                         <div className="chips_container">{skillsDiv}</div>
