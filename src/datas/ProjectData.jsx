@@ -6,6 +6,7 @@ import { LiaJava } from "react-icons/lia";
 import { GiSnakeTongue } from "react-icons/gi";
 import { SiVite, SiOpenai } from "react-icons/si";
 import { TbBrandMysql, TbBrandSocketIo } from "react-icons/tb";
+import TextDiv from "../components/common/TextDiv";
 
 export const getAllProjectData = () => {
     const thumnailImage = {
@@ -57,10 +58,11 @@ export const getAllProjectData = () => {
     let projectData = [
         {
             // eyetist
+            projectMembers: 3,
             award: "🎖 2023 Microsoft Imagine Cup \n World Finalists [ Asia 대표 ]",
             category: "WEB, FRONT_END",
             thumbnailImage: thumnailImage.eyetist,
-            date: "2023/01",
+            date: "2023/01 ~ 2023/03",
             heading: "EyeTist",
             body: "사용자의 얼굴을 인식하여 얼굴의 움직임을 통해 그림을 그릴 수 있는 웹 드로잉 서비스입니다.",
             link: "https://github.com/Eyetist/Eyetist_Client",
@@ -158,66 +160,91 @@ export const getAllProjectData = () => {
                     특성으로 인해 불편함을 호소하는 사용자가 많았고 이로인해 <strong>입을 활용하는 모드</strong>를
                     추가하게 되었습니다. 이를 통해 다양한 사용자의 특성을 고려해야한다는 점을 몸소 느꼈고 더더욱{" "}
                     <strong>UX & UI</strong>구상에 공을 들인 프로젝트입니다.
+                    <br />
+                    <br />
+                    <TextDiv text="🔖 Role" />
+                    <TextDiv text="1. 웹캠을 통해 얼굴 정보를 실시간으로 관리" />
+                    <TextDiv text="2. 얼굴 정보로 작동하는 마우스와 그에 상호작용하는 컴포넌트 구현" />
+                    <TextDiv text="3. 해당 마우스를 통해 작동하는 Pen 구현" />
+                    <TextDiv text="4. Gallery 구현" />
                 </p>
             ),
             service: (
                 <>
-                    <p>
-                        <strong>
-                            ✤ 사용자의 <span style={{ color: "#ed3770" }}>얼굴데이터</span>를 활용한{" "}
-                            <span style={{ color: "#ed3770" }}>웹 드로잉</span> 서비스
-                        </strong>
-                    </p>
-                    <p>
-                        <strong>
-                            ✤ <span style={{ color: "#ed3770" }}>EyeMode & MouthMode</span>를 제공하여 사용자가 편리한
-                            방식으로 제어
-                        </strong>
-                    </p>
-                    <p>
-                        <strong>
-                            ✤ <span style={{ color: "#ed3770" }}>눈과 입의 움직임으로 컨트롤</span> 가능한 마우스 &
-                            키보드 & 버튼
-                        </strong>
-                    </p>
-                    <p>
-                        <strong>
-                            ✤ 다양한 <span style={{ color: "#ed3770" }}>그림그리기 도구</span> 제공
-                        </strong>
-                    </p>
-                    <p>
-                        <strong>
-                            ✤ <span style={{ color: "#ed3770" }}>갤러리</span>를 통한 그림공유
-                        </strong>
-                    </p>
-                    <p>
-                        <strong>
-                            ✤ Github :{" "}
-                            <a target="_blank" href="https://github.com/Eyetist/Eyetist_Client">
-                                https://github.com/Eyetist/Eyetist_Client
-                            </a>
-                        </strong>
-                    </p>
-                    <p>
-                        <strong>
-                            ✤ 개발일지 :{" "}
-                            <a
-                                target="_blank"
-                                href="https://www.notion.so/Microsoft-Imagine-Cup-2023-2a62ec83bd384070ae352435f6f7c8ab"
-                            >
-                                Link
-                            </a>
-                        </strong>
-                    </p>
+                    <TextDiv text={"✔️ Features"} />
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ 사용자의 <span style={{ color: "#ed3770" }}>얼굴데이터</span>를 활용한{" "}
+                                <span style={{ color: "#ed3770" }}>웹 드로잉</span> 서비스
+                            </strong>
+                        }
+                    />
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ <span style={{ color: "#ed3770" }}>Eye & Mouth Mode</span>를 제공하여 사용자가 편리한
+                                방식으로 제어
+                            </strong>
+                        }
+                    />
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ <span style={{ color: "#ed3770" }}>눈과 입의 움직임으로 컨트롤</span> 가능한 마우스 &
+                                키보드 & 버튼
+                            </strong>
+                        }
+                    />
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ 다양한 <span style={{ color: "#ed3770" }}>그림그리기 도구</span> 제공
+                            </strong>
+                        }
+                    />
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ <span style={{ color: "#ed3770" }}>갤러리</span>를 통한 그림공유
+                            </strong>
+                        }
+                    />
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ Github :{" "}
+                                <a target="_blank" href="https://github.com/Eyetist/Eyetist_Client">
+                                    https://github.com/Eyetist/Eyetist_Client
+                                </a>
+                            </strong>
+                        }
+                    />
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ 개발일지 :{" "}
+                                <a
+                                    target="_blank"
+                                    href="https://www.notion.so/Microsoft-Imagine-Cup-2023-2a62ec83bd384070ae352435f6f7c8ab"
+                                >
+                                    Link
+                                </a>
+                            </strong>
+                        }
+                    />
+
+                    <br />
                 </>
             ),
         },
         {
             // 나홀로 편의점
+            projectMembers: 3,
             award: "🥇 세종대학교 제 4회 소프트웨어학과 \n 학술제 [ 최우수상 ]",
             category: "APP, FRONT_END",
             thumbnailImage: thumnailImage.convenienceStore,
-            date: "2022/08",
+            date: "2022/08 ~ 2022/09",
             heading: "나홀로 편의점",
             body: "시각장애인분들의 편의성 증진을 위한 품목 구별 앱서비스입니다.",
             link: "https://github.com/En-soso-com/Android",
@@ -313,53 +340,62 @@ export const getAllProjectData = () => {
                     하였습니다.
                     <br />
                     또한 <strong>시작장애인분들의 편의성을 위한 UX 구상</strong>에 많은 공을 들인 프로젝트입니다.
+                    <br />
+                    <br />
+                    <TextDiv text="🔖 Role" />
+                    <TextDiv text="1. Model 학습" />
+                    <TextDiv text="2. STT & TTL" />
                 </p>
             ),
             service: (
                 <>
-                    <p>
-                        <strong>
-                            ✤ <span style={{ color: "#ed3770" }}>음성</span>을 활용하여{" "}
-                            <span style={{ color: "#ed3770" }}>어플 실행 & 안내</span>
-                        </strong>
-                    </p>
-                    <p>
-                        <strong>
-                            ✤ <span style={{ color: "#ed3770" }}>카메라</span>를 활용하여 실시간으로{" "}
-                            <span style={{ color: "#ed3770" }}>화면에 노출되어있는 물건</span>의 정보를{" "}
-                            <span style={{ color: "#ed3770" }}>음성</span>으로 출력
-                        </strong>
-                    </p>
-                    <p>
-                        <strong>
-                            ✤ <span style={{ color: "#ed3770" }}>찾고자 하는 물건</span>이 탐지될경우{" "}
-                            <span style={{ color: "#ed3770" }}>음성</span>으로 알려주는 기능
-                        </strong>
-                    </p>
-                    <p>
-                        <strong>
-                            ✤ Github :{" "}
-                            <a target="_blank" href="https://github.com/En-soso-com/Android">
-                                https://github.com/En-soso-com/Android
-                            </a>
-                        </strong>
-                    </p>
-                    <p>
-                        <strong>
-                            ✤ 개발일지 :{" "}
-                            <a target="_blank" href="https://www.notion.so/SW-2022-8f3c835ea95d472189e1256280b65d9a">
-                                Link
-                            </a>
-                        </strong>
-                    </p>
+                    <TextDiv text="✔️ Features" />
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ <span style={{ color: "#ed3770" }}>음성</span>을 활용하여{" "}
+                                <span style={{ color: "#ed3770" }}>어플 실행 & 안내</span>
+                            </strong>
+                        }
+                    />
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ <span style={{ color: "#ed3770" }}>카메라</span>를 활용하여 실시간으로{" "}
+                                <span style={{ color: "#ed3770" }}>화면에 노출되어있는 물건</span>의 정보를{" "}
+                                <span style={{ color: "#ed3770" }}>음성</span>으로 출력
+                            </strong>
+                        }
+                    />
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ <span style={{ color: "#ed3770" }}>찾고자 하는 물건</span>이 탐지될경우{" "}
+                                <span style={{ color: "#ed3770" }}>음성</span>으로 알려주는 기능
+                            </strong>
+                        }
+                    />
+
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ Github :{" "}
+                                <a target="_blank" href="https://github.com/En-soso-com/Android">
+                                    https://github.com/En-soso-com/Android
+                                </a>
+                            </strong>
+                        }
+                    />
+                    <br />
                 </>
             ),
         },
         {
             // sutda
+            projectMembers: 2,
             category: "ETC, FRONT_END",
             thumbnailImage: thumnailImage.sutda,
-            date: "2022/05",
+            date: "2022/05 ~ 2022/06",
             heading: "Kakao Friends Sutda",
             body: "카카오프렌즈 컨셉으로 제작한 섯다게임입니다.",
             link: "https://github.com/DaeWon9/OpenSourceProject",
@@ -494,6 +530,13 @@ export const getAllProjectData = () => {
                     추가로 <strong>저작권이 있는 이미지를</strong> 사용했기에 <strong>저작권 문제에</strong> 대해 다시
                     한번 생각해 보았고, 규모가 있는 프로젝트에서 <strong>협업의 중요성</strong>과{" "}
                     <strong>코드 분리의 필요성</strong>을 느꼈습니다.
+                    <br />
+                    <br />
+                    <TextDiv text="🔖 Role" />
+                    <TextDiv text="1. 게임 로직" />
+                    <TextDiv text="2. 아이템 구현" />
+                    <TextDiv text="3. 상점 및 인벤토리" />
+                    <TextDiv text="4. NPC 난이도 분할" />
                 </p>
             ),
             service: (
@@ -511,9 +554,10 @@ export const getAllProjectData = () => {
         },
         {
             // portfolio
+            projectMembers: 1,
             category: "WEB, FRONT_END",
             thumbnailImage: thumnailImage.portfolio,
-            date: "2023/02",
+            date: "2023/02 ~",
             heading: "Portfolio",
             body: "포트폴리오 용도로 제작한 웹사이트입니다. 지금 보고 있는 바로 이 웹사이트입니다.",
             link: "https://github.com/DaeWon9/portfolio",
@@ -578,9 +622,10 @@ export const getAllProjectData = () => {
         },
         {
             // keyword Helper
+            projectMembers: 4,
             category: "WEB, FRONT_END",
             thumbnailImage: thumnailImage.keywordHelper,
-            date: "2023/02",
+            date: "2023/02/17 ~ 2023/02/18",
             heading: "Keyword Helper",
             body: "OpenAI를 활용한 키워드 추출 및 해당 키워드가 포함된 대화 요약 서비스입니다.",
             link: "https://github.com/DaeWon9/keyword-helper-front",
@@ -661,12 +706,9 @@ export const getAllProjectData = () => {
                     을 해결 하고자 하였습니다.
                     <br />
                     <br />
-                    <strong>{"[문제점]"}</strong>
-                    <br />
-                    <strong>✤ 대화도중 나타나는 어려운 전문용어.</strong>
-                    <br />
-                    <strong>✤ 채팅내역이 수백개씩 밀리는 경우 대화의 요점 파악이 어려움.</strong>
-                    <br />
+                    <TextDiv text="☑️ 문제점" />
+                    <TextDiv text="✤ 대화도중 나타나는 어려운 전문용어." />
+                    <TextDiv text="✤ 채팅내역이 수백개씩 밀리는 경우 대화의 요점 파악이 어려움." />
                     <br />
                     위와 같은 문제점들을 해결하기위해, <strong>OpenAI</strong>를 사용하여 협업공간 내의 원하는 시간대의
                     <strong> 채팅내역을 분석</strong>
@@ -678,27 +720,38 @@ export const getAllProjectData = () => {
                     <strong> 연관되어있는 채팅내역</strong>을 <strong>요약</strong>해서 보여줍니다.
                 </>
             ),
-            takeAway: <p></p>,
+            takeAway: (
+                <p>
+                    <TextDiv text="🔖 Role" />
+                    <TextDiv text="1. 실시간 채팅" />
+                    <TextDiv text="2. Keyword balloon" />
+                    <TextDiv text="3. 네이버 사전 API 연동" />
+                </p>
+            ),
             service: (
                 <>
-                    <p>
-                        <strong>
-                            ✤ Github :{" "}
-                            <a target="_blank" href="https://github.com/DaeWon9/keyword-helper-front">
-                                https://github.com/DaeWon9/keyword-helper-front
-                            </a>
-                        </strong>
-                    </p>
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ Github :{" "}
+                                <a target="_blank" href="https://github.com/DaeWon9/keyword-helper-front">
+                                    https://github.com/DaeWon9/keyword-helper-front
+                                </a>
+                            </strong>
+                        }
+                    />
+                    <br />
                 </>
             ),
         },
 
         {
             // lobster
+            projectMembers: 3,
             award: "🏆 2022 개방형 클라우드 플랫폼 기반 \n 서비스 개발 공모전 [ 특별상 ]",
             category: "WEB, FRONT_END",
             thumbnailImage: thumnailImage.lobster,
-            date: "2022/10",
+            date: "2022/10 ~ 2022/12",
             heading: "Lobster",
             body: "대학생들의 조별과제 등 팀 단위로 이루어지는 협업을 도와주는 웹 커뮤니티 서비스입니다.",
             link: "https://github.com/2Park1Jo/lobster",
@@ -778,59 +831,64 @@ export const getAllProjectData = () => {
             takeAway: (
                 <p>
                     이번 프로젝트는 모든것이 처음이였던 프로젝트였습니다.
-                    <strong>React, MVVM 패턴, 웹소켓</strong> 등 처음부터 공부하면서 진행했던 프로젝트라 더욱 의미가
-                    있었습니다.
+                    <strong>React, Recoil, MVVM 패턴, 웹소켓</strong> 등 처음부터 공부하면서 진행했던 프로젝트라 더욱
+                    의미가 있었습니다.
                     <strong>React</strong>를 처음으로 사용해보면서 React가 가진 차별성을 느낄 수 있었습니다. 특히{" "}
                     <strong>웹소켓</strong>을 통한 서버와 클라이언트의 <strong>양방향 통신</strong>을 구현하면서,
-                    실시간으로 사용자들에게 보여주는 작업이 필요했습니다. 이때 <strong>React 상태관리</strong>의 이점을
-                    많이 느꼈습니다.
+                    실시간으로 사용자들에게 보여주는 작업이 필요했습니다. 이때{" "}
+                    <strong>Recoil 상태관리 라이브러리</strong>의 이점을 많이 느꼈습니다.
+                    <br />
+                    <br />
+                    <TextDiv text="🔖 Role" />
+                    <TextDiv text="1. 실시간 채팅" />
+                    <TextDiv text="2. 통계 페이지" />
+                    <TextDiv text="3. 버킷" />
                 </p>
             ),
             service: (
                 <>
-                    <p>
-                        <strong>
-                            ✤ <span style={{ color: "#ed3770" }}>팀단위의 협업</span>을 도와주는 웹 커뮤니티 서비스
-                        </strong>
-                    </p>
-                    <p>
-                        <strong>
-                            ✤ 간단한 조작으로 <span style={{ color: "#ed3770" }}>협업공간</span>을{" "}
-                            <span style={{ color: "#ed3770" }}>생성</span>하고 팀원들과{" "}
-                            <span style={{ color: "#ed3770" }}>공유</span>
-                        </strong>
-                    </p>
-                    <p>
-                        <strong>
-                            ✤ 중요한 자료를 따로 관리하는 <span style={{ color: "#ed3770" }}>'버킷'</span>
-                        </strong>
-                    </p>
-                    <p>
-                        <strong>
-                            ✤ 한눈에 보는 <span style={{ color: "#ed3770" }}>프로젝트 진행도</span>
-                        </strong>
-                    </p>
-                    <p>
-                        <strong>
-                            ✤ 몇 번의 클릭으로 <span style={{ color: "#ed3770" }}>최종 결과물 취합</span>
-                        </strong>
-                    </p>
-                    <p>
-                        <strong>
-                            ✤ Github :{" "}
-                            <a target="_blank" href="https://github.com/2Park1Jo/lobster">
-                                https://github.com/2Park1Jo/lobster
-                            </a>
-                        </strong>
-                    </p>
-                    <p>
-                        <strong>
-                            ✤ 개발일지 :{" "}
-                            <a target="_blank" href="https://www.notion.so/2022-823f93007aca4149aabd6a1ddd77a86d">
-                                Link
-                            </a>
-                        </strong>
-                    </p>
+                    <TextDiv text="✔️ Features" />
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ 간단한 조작으로 <span style={{ color: "#ed3770" }}>협업공간</span>을{" "}
+                                <span style={{ color: "#ed3770" }}>생성</span>하고 팀원들과{" "}
+                                <span style={{ color: "#ed3770" }}>공유</span>
+                            </strong>
+                        }
+                    />
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ 중요한 자료를 따로 관리하는 <span style={{ color: "#ed3770" }}>'버킷'</span>
+                            </strong>
+                        }
+                    />
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ 한눈에 보는 <span style={{ color: "#ed3770" }}>프로젝트 진행도</span>
+                            </strong>
+                        }
+                    />
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ 몇 번의 클릭으로 <span style={{ color: "#ed3770" }}>최종 결과물 취합</span>
+                            </strong>
+                        }
+                    />
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ Github :{" "}
+                                <a target="_blank" href="https://github.com/2Park1Jo/lobster">
+                                    https://github.com/2Park1Jo/lobster
+                                </a>
+                            </strong>
+                        }
+                    />
+                    <br />
                 </>
             ),
         },
