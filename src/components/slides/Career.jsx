@@ -5,18 +5,6 @@ import "./Slides.css";
 const Career = () => {
     return (
         <div className="slide_container">
-            <ul className="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
             <div className="slide_header">CAREER</div>
             <div className="slide_body">
                 <div className="career_left">
