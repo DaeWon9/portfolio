@@ -1,31 +1,48 @@
 .skill_box {
-    width: 30vh;
-    background-color: navy;
-    border-radius: 10px;
-    margin-right: 2%;
-    margin-bottom: 8%;
+    width: 540px;
+    height: 200px;
+    border: 0.2rem solid #eeeeee;
+    border-radius: 2rem;
+    margin: 2rem;
+    padding: 2rem;
+    position: relative;
 }
 
-.skill_box_title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.skill_name {
+    transform: rotate(-10deg);
+    position: absolute;
+    left: -1.5rem;
+    top: -1.5rem;
+    border: 0.2rem solid #eeeeee;
+    background-color: #1a1a1a;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
     font-weight: 800;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    border-radius: 1rem;
 }
 
-.skill_box_icons_container {
+.skill_contents {
+    margin-top: 1.5rem;
+    color: #eeeeee;
+    line-height: 200%;
+}
+
+.skill_chip_contents {
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: white;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    align-items: center;
 }
 
 @media (max-width: 480px) {
     .skill_box {
-        width: 70vw;
+        width: 60%;
+        height: auto;
+    }
+    .skill_contents {
+        margin-top: 1.5rem;
+        color: #eeeeee;
+        line-height: 150%;
     }
 }
