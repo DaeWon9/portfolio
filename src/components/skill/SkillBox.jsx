@@ -20,7 +20,7 @@ const SkillBox = (props) => {
     return (
         <motion.div
             style={{ border: `0.2rem solid ${props.color}` }}
-            whileHover={{ scale: 1.1 }}
+            whileHover={windowSize.width > 480 ? { scale: 1.1 } : {}}
             className="skill_box"
             onHoverStart={() => {
                 setIsHover(true);

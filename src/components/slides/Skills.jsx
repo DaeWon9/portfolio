@@ -5,7 +5,8 @@ import SkillBox from "../skill/SkillBox";
 import Snow from "../common/Snow";
 import "./Slides.css";
 
-const Skills = () => {
+const Skills = (props) => {
+    const [onSkillBoxTouch, setOnSkillBoxTouch] = useState(false);
     const [chips, setChips] = useState();
     const [reactChips, setReactChips] = useState();
     const [uiChips, setUiChips] = useState();
@@ -54,12 +55,26 @@ const Skills = () => {
         setUiChips(uiChipList);
     }, []);
 
+    useEffect(() => {
+        if (props.swiper) {
+            if (onSkillBoxTouch) {
+                props.swiper.allowTouchMove = false;
+            } else {
+                props.swiper.allowTouchMove = true;
+            }
+        }
+    }, [onSkillBoxTouch]);
+
     return (
         <div className="slide_container">
             <Snow />
             <div className="slide_header">SKILLS</div>
             <div className="slide_body">
-                <div className="skills_container">
+                <div
+                    className="skills_container"
+                    onTouchStart={() => setOnSkillBoxTouch(true)}
+                    onTouchEnd={() => setOnSkillBoxTouch(false)}
+                >
                     <div className="chips_container">{chips}</div>
                     <div className="skill_info_container">
                         <SkillBox
