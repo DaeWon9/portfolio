@@ -1,47 +1,90 @@
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { getAllSkillsData } from "../../datas/SkillsData";
+import Chip from "../common/Chip";
 import SkillBox from "../skill/SkillBox";
+import Snow from "../common/Snow";
 import "./Slides.css";
 
-const skillImage = {
-    front: require("../../assets/icons/front_icons.png"),
-    back: require("../../assets/icons/back_icons.png"),
-    app: require("../../assets/icons/app_icons.png"),
-};
+const Skills = () => {
+    const [chips, setChips] = useState();
+    const [reactChips, setReactChips] = useState();
+    const [uiChips, setUiChips] = useState();
 
-const Skills = (props) => {
     useEffect(() => {
-        if (props.isActive) {
-            props.setIsDetailCardOpen(false);
-        }
-    }, [props.isActive]);
+        let chipList = [];
+        let reactChipList = [];
+        let uiChipList = [];
+        getAllSkillsData().map((skill) => {
+            chipList.push(
+                <Chip
+                    key={skill.name}
+                    color={skill.color}
+                    backgroundColor={skill.backgroundColor}
+                    icon={skill.icon}
+                    name={skill.name}
+                    type="Line"
+                />
+            );
+            if (skill.group === "React") {
+                reactChipList.push(
+                    <Chip
+                        key={skill.name}
+                        color={skill.color}
+                        backgroundColor={skill.backgroundColor}
+                        icon={skill.icon}
+                        name={skill.name}
+                        type="Circle"
+                    />
+                );
+            } else if (skill.group === "UI") {
+                uiChipList.push(
+                    <Chip
+                        key={skill.name}
+                        color={skill.color}
+                        backgroundColor={skill.backgroundColor}
+                        icon={skill.icon}
+                        name={skill.name}
+                        type="Circle"
+                    />
+                );
+            }
+        });
+        setChips(chipList);
+        setReactChips(reactChipList);
+        setUiChips(uiChipList);
+    }, []);
 
     return (
-        <div className="slide_container" style={{ backgroundColor: "bisque" }}>
+        <div className="slide_container">
+            <Snow />
             <div className="slide_header">SKILLS</div>
             <div className="slide_body">
-                <div
-                    className="skills_container"
-                    onTouchStart={() => (props.swiper.allowTouchMove = false)}
-                    onTouchEnd={() => (props.swiper.allowTouchMove = true)}
-                >
-                    <div style={{ marginRight: "2%" }}>
+                <div className="skills_container">
+                    <div className="chips_container">{chips}</div>
+                    <div className="skill_info_container">
                         <SkillBox
-                            title="Front_End"
-                            icons={<img src={skillImage.front} width="80%"></img>}
-                            swiper={props.swiper}
-                        />
-                    </div>
-                    <div>
-                        <SkillBox
-                            title="Back_End"
-                            icons={<img src={skillImage.back} width="80%"></img>}
-                            swiper={props.swiper}
+                            color="#61DAFB"
+                            name="React"
+                            contents={[
+                                "✤ 재사용이 가능한 컴포넌트 단위로 개발을 진행해봤어요.",
+                                "✤ TypeScript를 활용하여 코드의 안정성과 가독성을 향상시킬 수 있어요.",
+                                "✤ Recoil 상태관리 라이브러리를 사용해 전역으로 상태관리를 해봤어요.",
+                                "✤ React.memo를 활용하여 컴포넌트 리렌더링을 최적화하려고 시도해 봤어요.",
+                                "✤ 컴포넌트 라이브러리를 사용하여 스타일링을 간편하고 유연하게 할 수 있어요.",
+                            ]}
+                            chips={reactChips}
                         />
                         <SkillBox
-                            title="APP"
-                            icons={<img src={skillImage.app} width="80%"></img>}
-                            swiper={props.swiper}
+                            color="#DB7093"
+                            name="Design Tools"
+                            contents={[
+                                "✤ Styled-components를 활용하여 컴포넌트 스타일링을 할 수 있어요.",
+                                "✤ MUI에서 제공하는 컴포넌트들을 활용하여 화면을 구성해 봤어요.",
+                                "✤ Chakra, Tailwind를 활용하여 간편하게 디자인 시스템을 구축해 봤어요.",
+                                "✤ CSS3 미디어 쿼리 @media를 사용하여 환경에 맞춘 반응형 웹 디자인을 해봤어요.",
+                                "✤ SCSS 문법을 사용해 봤어요.",
+                            ]}
+                            chips={uiChips}
                         />
                     </div>
                 </div>

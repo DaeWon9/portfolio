@@ -5,7 +5,19 @@ import "./Slides.css";
 
 const Introduction = (props) => {
     return (
-        <div className="slide_container" style={{ backgroundColor: "bisque" }}>
+        <div className="slide_container">
+            <ul className="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
             <div className="slide_header_picture">
                 <ProfilePicture
                     image={require("../../assets/Image/profile/profileImage2.png")}

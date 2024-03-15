@@ -9,19 +9,7 @@ const Project = (props) => {
     const [category, setCategory] = useState("ALL");
 
     return (
-        <div className="slide_container" style={{ backgroundColor: "rgb(0, 0, 85)" }}>
-            <ul className="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+        <div className="slide_container">
             {props.isDetailCardOpen ? (
                 <ProjectDetailCard
                     isDetailCardOpen={props.isDetailCardOpen}
