@@ -38,6 +38,12 @@ const Career = () => {
                     >
                         🎖 2023 Microsoft Imagine Cup - World Finalists ( Asia 대표 )
                     </p>
+                    <p
+                        className="career_content_link"
+                        onClick={() => window.open("https://softeerbootcamp.hyundaimotorgroup.com/", "_blank")}
+                    >
+                        🔥 HMG SOFTEER BOOTCAMP 2024 (2024.07. ~ 2024.08.)
+                    </p>
                 </div>
             </div>
         </div>
