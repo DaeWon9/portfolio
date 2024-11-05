@@ -160,9 +160,6 @@ const ProjectCard = ({ index, projectMembers, award, image, date, body, link, sk
                             style={{
                                 display: "flex",
                                 width: "100%",
-                                height: "20%",
-                                alignItems: "center",
-                                justifyContent: "end",
                             }}
                         >
                             <div className={styles.buttonFilled} onClick={() => setIsDetailCardOpen(true)}>
