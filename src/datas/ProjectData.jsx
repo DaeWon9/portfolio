@@ -1,6 +1,17 @@
 import { SwiperSlide } from "swiper/react";
 import { FaReact, FaAmazon } from "react-icons/fa";
-import { SiJavascript, SiMicrosoftazure, SiNginx, SiPython, SiPytorch, SiYolo } from "react-icons/si";
+import {
+    SiTypescript,
+    SiJavascript,
+    SiMicrosoftazure,
+    SiNginx,
+    SiPython,
+    SiPytorch,
+    SiYolo,
+    SiReactquery,
+    SiFramer,
+    SiFirebase,
+} from "react-icons/si";
 import { BsAndroid } from "react-icons/bs";
 import { LiaJava } from "react-icons/lia";
 import { GiSnakeTongue } from "react-icons/gi";
@@ -16,6 +27,7 @@ export const getAllProjectData = () => {
         sutda: require("../assets/thunmnailImage/Sutda.jpeg"),
         portfolio: require("../assets/thunmnailImage/Portfolio.png"),
         keywordHelper: require("../assets/thunmnailImage/KeywordHelper.png"),
+        softeer: require("../assets/thunmnailImage/Softeer.png"),
     };
 
     const convenienceStroeImage = {
@@ -53,6 +65,14 @@ export const getAllProjectData = () => {
     const keywordHelperImage = {
         page1: require("../assets/Image/keywordHelper/keywordHelper1.jpg"),
         page2: require("../assets/Image/keywordHelper/keywordHelper2.jpg"),
+    };
+
+    const softeerImage = {
+        page1: require("../assets/Image/softeer/Softeer1.gif"),
+        page2: require("../assets/Image/softeer/Softeer2.gif"),
+        page3: require("../assets/Image/softeer/Softeer3.gif"),
+        page4: require("../assets/Image/softeer/Softeer4.gif"),
+        page5: require("../assets/Image/softeer/Softeer5.gif"),
     };
 
     let projectData = [
@@ -886,6 +906,239 @@ export const getAllProjectData = () => {
                                     https://github.com/2Park1Jo/lobster
                                 </a>
                             </strong>
+                        }
+                    />
+                    <br />
+                </>
+            ),
+        },
+
+        {
+            // Softeer BootCamp
+            projectMembers: 4,
+            category: "WEB, FRONT_END",
+            thumbnailImage: thumnailImage.softeer,
+            date: "2024/07 ~ 2024/08",
+            heading: "아반떼 N 소개 이벤트",
+            body: "신차 홍보를 위한 이벤트 페이지 입니다. 선착순 이벤트, 추첨 이벤트로 구성되어 있습니다.",
+            link: "https://github.com/DaeWon9/Team5-WatermelonClap-FE",
+            skills: [
+                {
+                    name: "React",
+                    icon: <FaReact style={{ paddingRight: "2px" }} />,
+                    backgroundColor: "#61DAFB",
+                    color: "black",
+                },
+                {
+                    name: "Typescript",
+                    icon: <SiTypescript style={{ paddingRight: "2px" }} />,
+                    backgroundColor: "#3178C6",
+                    color: "white",
+                },
+                {
+                    name: "ReactQuery",
+                    icon: <SiReactquery style={{ paddingRight: "2px" }} />,
+                    backgroundColor: "#FF4154",
+                    color: "white",
+                },
+                {
+                    name: "Framer Motion",
+                    icon: <SiFramer style={{ paddingRight: "2px" }} />,
+                    backgroundColor: "#0055FF",
+                    color: "white",
+                },
+                {
+                    name: "Firebase",
+                    icon: <SiFirebase style={{ paddingRight: "2px" }} />,
+                    backgroundColor: "#DD2C00",
+                    color: "white",
+                },
+                {
+                    name: "Vite",
+                    icon: <SiVite style={{ paddingRight: "2px" }} />,
+                    backgroundColor: "#646CFF",
+                    color: "white",
+                },
+            ],
+
+            image: (
+                <>
+                    <SwiperSlide
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                        }}
+                    >
+                        <img src={thumnailImage.softeer} width="100%"></img>
+                    </SwiperSlide>
+                    <SwiperSlide
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                        }}
+                    >
+                        <img src={softeerImage.page1} width="100%"></img>
+                    </SwiperSlide>
+                    <SwiperSlide
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                        }}
+                    >
+                        <img src={softeerImage.page2} width="100%"></img>
+                    </SwiperSlide>
+                    <SwiperSlide
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                        }}
+                    >
+                        <img src={softeerImage.page3} width="100%"></img>
+                    </SwiperSlide>
+                    <SwiperSlide
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                        }}
+                    >
+                        <img src={softeerImage.page4} width="100%"></img>
+                    </SwiperSlide>
+                    <SwiperSlide
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                        }}
+                    >
+                        <img src={softeerImage.page5} width="100%"></img>
+                    </SwiperSlide>
+                </>
+            ),
+            background: (
+                <>
+                    <p>
+                        <strong>{"[HMG Softeer Bootcamp 4기 팀프로젝트]"}</strong>
+                    </p>
+                    <strong>소프티어 부트캠프</strong>에서 팀 프로젝트로 <strong>신규 차량 소개</strong>를 위한{" "}
+                    <strong>이벤트 페이지</strong>를 구현했습니다. 약 2주 동안 <strong>디자이너, 기획자, 개발자</strong>
+                    들이 긴밀하게 소통하며 프로젝트의 초기 설계를 함께 진행했는데, <strong>어떤 차량을 소개할지</strong>
+                    , <strong>주요 타깃층</strong>, 그리고 <strong>이벤트의 방향</strong>에 대해 논의하며 프로젝트를
+                    구체화했습니다. 구상 단계부터 모든 팀원이 참여하면서 프로젝트의 <strong>방향성</strong>을 더 깊이
+                    이해하게 되었고, 개발팀 내부에서도 <strong>초기 설계</strong>를 더 효율적으로 진행할 수 있었습니다.
+                </>
+            ),
+            takeAway: (
+                <p>
+                    <strong>협업의 힘</strong>을 깊이 느낄 수 있었던 프로젝트였습니다. <br />
+                    다양한 직군의 사람들과 함께 소통하며 <strong>하나의 프로젝트를</strong> 완성해 나간다는 점이
+                    좋았습니다. 사용자에게 더 나은 경험을 제공하기 위해 <strong>최적화</strong>에도 많은 고민을
+                    기울였습니다.
+                    <br />
+                    <strong>어드민과 서비스 관리</strong>를 효율적으로 하는 방법, <strong>에셋을 빠르게 로드</strong>
+                    하는 최적화, <strong>선착순 이벤트</strong> 구현 시 <strong>백엔드 부하 감소</strong> 방안,{" "}
+                    <strong>모바일 접속 최적화</strong> 등이 주요 과제였으며, 이를 해결해 가는 과정에서 많은{" "}
+                    <strong>기술적 도전</strong>과 성장이 있었습니다. 또한, 매일 <strong>스크럼과 회고</strong>를
+                    진행하고 <strong>주 단위 스프린트</strong>를 구성하면서 체계적인 협업 방법론도 배울 수 있었습니다.
+                    <br />
+                    <br />
+                    <TextDiv text="🔖 Role" />
+                    <TextDiv text="1. 어드민 페이지 구현" />
+                    <TextDiv text="2. 신차 소개 페이지 애니메이션 구현" />
+                    <TextDiv text="3. 파츠 컬렉션 / 공유URl: 공유 카드 구현" />
+                    <TextDiv text="4. 선착순 이벤트: 퀴즈 이벤트 페이지 구현" />
+                    <TextDiv text="5. 추첨 이벤트: 뽑기 이벤트 로직 및 애니메이션 구현" />
+                </p>
+            ),
+            service: (
+                <>
+                    <TextDiv text="✔️ Features" />
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ <span style={{ color: "#ed3770" }}>신차 홍보</span>를 위한{" "}
+                                <span style={{ color: "#ed3770" }}>이벤트 페이지</span>입니다.
+                            </strong>
+                        }
+                    />
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ <span style={{ color: "#ed3770" }}>선착순</span>,{" "}
+                                <span style={{ color: "#ed3770" }}>추첨 이벤트</span>로 구성되어 있습니다.
+                            </strong>
+                        }
+                    />
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ 다양한 <span style={{ color: "#ed3770" }}>애니메이션</span>을 구현하여 유저가 흥미를
+                                가지도록 유도했습니다.
+                            </strong>
+                        }
+                    />
+                    <TextDiv
+                        text={
+                            <strong>
+                                ✤ <span style={{ color: "#ed3770" }}>공유 URL</span>을 통해 홍보 효과를
+                                극대화하였습니다.
+                            </strong>
+                        }
+                    />
+                    <TextDiv
+                        text={
+                            <>
+                                <strong>
+                                    ✤ Github :{" "}
+                                    <a target="_blank" href="https://github.com/DaeWon9/Team5-WatermelonClap-FE">
+                                        https://github.com/DaeWon9/Team5-WatermelonClap-FE
+                                    </a>
+                                </strong>
+                                <br />
+                                <strong>
+                                    ✤ 이슈관리 :{" "}
+                                    <a
+                                        target="_blank"
+                                        href="https://watermelon-clap.atlassian.net/jira/software/projects/CLAP/boards/1"
+                                    >
+                                        LINK
+                                    </a>
+                                </strong>
+                                <br />
+                                <strong>
+                                    ✤ 전체 회의록 :{" "}
+                                    <a
+                                        target="_blank"
+                                        href="https://bside.notion.site/4d152e2f240a4909bec05539d862008a?pvs=4"
+                                    >
+                                        LINK
+                                    </a>
+                                </strong>
+                                <br />
+                                <strong>
+                                    ✤ FE 회의록 :{" "}
+                                    <a
+                                        target="_blank"
+                                        href="https://bside.notion.site/664ba9b6813e452aa375d68ca0cc693f?pvs=4"
+                                    >
+                                        LINK
+                                    </a>
+                                </strong>
+                                <br />
+                                <strong>
+                                    ✤ 트러블슈팅 :{" "}
+                                    <a
+                                        target="_blank"
+                                        href="https://bside.notion.site/3b23af17b4bf47d3a6b488212b1f8959?pvs=4"
+                                    >
+                                        LINK
+                                    </a>
+                                </strong>
+                            </>
                         }
                     />
                     <br />
