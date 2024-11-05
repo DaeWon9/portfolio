@@ -643,6 +643,7 @@ export const getAllProjectData = () => {
         {
             // keyword Helper
             projectMembers: 4,
+            award: "채널톡 HACKY-TALKY\n챌린저스 1기 해커톤",
             category: "WEB, FRONT_END",
             thumbnailImage: thumnailImage.keywordHelper,
             date: "2023/02/17 ~ 2023/02/18",
@@ -916,6 +917,7 @@ export const getAllProjectData = () => {
         {
             // Softeer BootCamp
             projectMembers: 4,
+            award: "HMG Softeer Bootcamp 4기\n팀프로젝트",
             category: "WEB, FRONT_END",
             thumbnailImage: thumnailImage.softeer,
             date: "2024/07 ~ 2024/08",
