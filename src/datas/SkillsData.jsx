@@ -4,6 +4,7 @@ import {
     SiStyledcomponents,
     SiTypescript,
     SiRecoil,
+    SiReactquery,
     SiMui,
     SiChakraui,
     SiTailwindcss,
@@ -38,6 +39,13 @@ export const getAllSkillsData = () => {
             group: "React",
             icon: <SiRecoil style={{ paddingRight: "2px" }} />,
             backgroundColor: "#3578E5",
+            color: "white",
+        },
+        {
+            name: "ReactQuery",
+            group: "React",
+            icon: <SiReactquery style={{ paddingRight: "2px" }} />,
+            backgroundColor: "#FF4154",
             color: "white",
         },
         {
