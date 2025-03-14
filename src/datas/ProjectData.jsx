@@ -28,6 +28,7 @@ export const getAllProjectData = () => {
         portfolio: require("../assets/thunmnailImage/Portfolio.png"),
         keywordHelper: require("../assets/thunmnailImage/KeywordHelper.png"),
         softeer: require("../assets/thunmnailImage/Softeer.png"),
+        reactImitation: require("../assets/thunmnailImage/ReactImitation.png"),
     };
 
     const convenienceStroeImage = {
@@ -1137,6 +1138,119 @@ export const getAllProjectData = () => {
                                         target="_blank"
                                         href="https://bside.notion.site/3b23af17b4bf47d3a6b488212b1f8959?pvs=4"
                                     >
+                                        LINK
+                                    </a>
+                                </strong>
+                            </>
+                        }
+                    />
+                    <br />
+                </>
+            ),
+        },
+
+        {
+            // React-Imitation
+            projectMembers: 1,
+            category: "FRONT_END, ETC",
+            thumbnailImage: thumnailImage.reactImitation,
+            date: "2024/12 ~ ",
+            heading: "React 모방해보기",
+            body: "기존 라이브러리 없이 자체적인 상태 관리 및 렌더링 환경을 구축하여, React를 모방해보는 프로젝트입니다.",
+            link: "https://github.com/DaeWon9/react-imitation",
+            skills: [
+                {
+                    name: "Typescript",
+                    icon: <SiTypescript style={{ paddingRight: "2px" }} />,
+                    backgroundColor: "#3178C6",
+                    color: "white",
+                },
+                {
+                    name: "Vite",
+                    icon: <SiVite style={{ paddingRight: "2px" }} />,
+                    backgroundColor: "#646CFF",
+                    color: "white",
+                },
+            ],
+
+            image: (
+                <>
+                    <SwiperSlide
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                        }}
+                    >
+                        <img src={thumnailImage.reactImitation} width="100%"></img>
+                    </SwiperSlide>
+                </>
+            ),
+            background: (
+                <>
+                    <p>
+                        <strong>{""}</strong>
+                    </p>
+                    2024년 8월, <strong>현대자동차그룹의 소프티어 부트캠프</strong>에 참여하며 프론트엔드 교육 과정을
+                    수료했습니다.
+                    <strong> 라이브러리 사용이 제한된 상황</strong>에서 개인 프로젝트를 진행해야 했습니다. 이 과정에서
+                    <strong> 널리 사용되는 라이브러리들에 의존하고 있다</strong>는 점을 인지하게 되었고, 그동안 당연하게
+                    사용해 온 라이브러리들의 내부 동작 방식에 대해 깊이 고민해 본 적이 없다는 사실을 깨달았습니다.
+                    <br />
+                    이에, 진행 과정에서
+                    <strong> 궁금증이 생겼던 부분</strong>에 대해 깊게 고민해 보는 시간을 가졌습니다. 내용들을 정리해
+                    보니
+                    <strong>React의 작동 원리</strong>에 대한 궁금증이 대다수였습니다. 이를 단순히{" "}
+                    <strong>이론적으로 학습하는 것</strong>에 그치지 않고,
+                    <strong>직접 구현해 보며 원리를 깊이 이해</strong>하고자{" "}
+                    <strong>React를 모방한 SPA 프레임워크 개발</strong>이라는 도전에 나섰습니다.
+                </>
+            ),
+            takeAway: (
+                <p>
+                    <strong>JSX 문법의 동작 방식</strong>, <strong>Virtual DOM의 렌더링 과정</strong>,
+                    <strong>컴포넌트별 고유 키 관리</strong>, <strong>상태 관리</strong>, <strong>이벤트 처리</strong>{" "}
+                    등 궁금했던 개념들을 단계적으로 정리했습니다. 이후, 각 개념들이 <strong>어떻게 연결될지</strong>,
+                    <strong> 어떤 타입을 받게 될지</strong>를 설계하고 구현했습니다. 이 과정에서
+                    <strong> 성능적으로 최적화</strong>할 수 있는 방법을 고민하며
+                    <strong> 적절한 자료구조와 알고리즘</strong>을 적용했습니다. 이렇게 개발한 라이브러리는
+                    <strong> npm에 배포</strong>하여 개인 프로젝트에서 활용해 보고 있습니다. <br />
+                    아직 부족한 점이 많아, 프로젝트를 진행하며 보완할 부분을 발견하면 <strong>지속적으로 개선</strong>해
+                    나갈 예정입니다.
+                    <br />
+                    <br />
+                    <TextDiv text="1. createElement를 통해 요소 생성하는 환경을 구축" />
+                    <TextDiv text="2. VirtaulDom 구조 설계" />
+                    <TextDiv text="3. Jsx 문법과 createElement 연동" />
+                    <TextDiv text="4. useState, useEffect, useRef hook 구현" />
+                    <TextDiv text="5. Routing 기능 구현" />
+                </p>
+            ),
+            service: (
+                <>
+                    <TextDiv
+                        text={
+                            <>
+                                <strong>
+                                    ✤ Github :{" "}
+                                    <a target="_blank" href="https://github.com/DaeWon9/react-imitation">
+                                        https://github.com/DaeWon9/react-imitation
+                                    </a>
+                                </strong>
+                                <br />
+                                <strong>
+                                    ✤ 개발과정 :{" "}
+                                    <a
+                                        target="_blank"
+                                        href="https://sphenoid-clam-886.notion.site/React-Imitation-1457f6cf0599801ea317c43864c0ad01?pvs=74"
+                                    >
+                                        LINK
+                                    </a>
+                                </strong>
+                                <br />
+                                <strong>
+                                    ✤ NPM :{" "}
+                                    <a target="_blank" href="https://www.npmjs.com/package/daewon-react-imitation">
                                         LINK
                                     </a>
                                 </strong>
